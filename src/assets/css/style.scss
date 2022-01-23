@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$bg-color : white;
+
+
+// Sidebar Start CSS (Navigation)
+.logo {
+    margin: auto;
+}
+.v-navigation-drawer__border {
+    right: 0;
+    top: 0;
+    height: 0%;
+    width: 0px;
+}
+.child {
+    background: $bg-color;
+}
+.font-class-name {
+    font-size: 12px;
+}
+
+.sidebar {
+    background: #f7f7f7;
+    margin: 20px 10px 0px 20px;
+}
+// End Sidebar CSS
+//  Topbar css
+.text {
+    text-align: center;
+}
+
+.navsearch {
+    background-color: #ebebeb;
+    width: 500px;
+    margin-left: 10%;
+    margin-right: 30px;
+}
+//remove text area border
+.v-text-field > .v-input__control > .v-input__slot:before {
+    border-style: none;
+}
+
+// End Topbar css
+
+//  Home page CSS Start
+.card1 {
+    margin-left: 100px;
+}
+img {
+    border-radius: 5%;
+}
+
+.carddesign {
+    margin: 15px;
+}
+.container1 {
+    margin-top: 50px;
+    margin-left: 5px;
+}
+
+.btnsubmit {
+    margin-top: 40px;
+    height: 36px;
+    min-width: 64px;
+    padding: 0 16px;
+    background: #da291c;
+}
+span {
+    color: $bg-color;
+}
+//  Home page CSS End
+
+//Start Top bar Btn Responsive
+@media (max-width: 30em) {
+    .navsearch {
+        width: 200px;
+        display: block;
+        margin: 0.4em auto;
+    }
+}
+//End Top bar Btn Responsive
+
+// Destop
+@media (min-width: 1025px) {
+    .hidden {
+        visibility: hidden;
+    }
+}
+/* tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+   
+  }
