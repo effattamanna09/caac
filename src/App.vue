@@ -1,7 +1,6 @@
 <template>
  <v-app>
  <Header />
- <Home />
     <v-main>
      
     <slot />
@@ -12,16 +11,14 @@
 
 <script>
 import Header from './components/Header.vue';
-import Home from './components/Home.vue';
  import Footer from './components/Footer.vue';
 
 
 export default {
-  name: 'App',
+  name: 'base-layout',
 
   components: {
     Header,
-    Home,
     Footer,
   },
 

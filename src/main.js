@@ -1,10 +1,38 @@
 import Vue from 'vue'
-import App from './App.vue'
+// import App from './App.vue'
 import vuetify from './plugins/vuetify'
 
-Vue.config.productionTip = false
+const NotFound = { template: '<p>Page not found</p>' }
+import Home from './components/Home.vue'
 
+Vue.config.productionTip = false;
+
+const routes = {
+  '/': Home,
+}
 new Vue({
   vuetify,
-  render: h => h(App)
-}).$mount('#app')
+  el: '#app',
+  data: {
+    currentRoute: window.location.pathname
+  },
+  computed: {
+    ViewComponent () {
+      return routes[this.currentRoute] || NotFound
+    }
+  },
+  render (h) { return h(this.ViewComponent) }
+})
+
+// new Vue({
+//   vuetify,
+//   data: {
+//         currentRoute: window.location.pathname
+//       },
+//   computed: {
+//     ViewComponent () {
+//       return routes[this.currentRoute] || NotFound
+//     }
+//   },
+//   render: h => h(this.ViewComponent)
+// }).$mount('#app')
