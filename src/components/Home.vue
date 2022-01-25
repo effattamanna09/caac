@@ -89,49 +89,57 @@
 
     <div class="container">
       <div class="sci-bg sci-bg-1">
-      <v-row>
-        <v-col lg="12" cols="12" md="12">
-          <div class="project">
-            <h1>Our Project</h1>
-            <v-divider class="divider"></v-divider><br />
-            <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder text commonly
-              used to demonstrate the visual form of a document or a typeface without
-              relying on meaningful content. Lorem ipsum may be used as a placeholder
-              before the final copy is available. In publishing and graphic design, Lorem
-              ipsum is a placeholder text commonly used to demonstrate
-            </p>
+        <v-row>
+          <v-col lg="12" cols="12" md="12">
+            <div class="project">
+              <h1>Our Project</h1>
+              <v-divider class="divider"></v-divider><br />
+              <p>
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface
+                without relying on meaningful content. Lorem ipsum may be used as a
+                placeholder before the final copy is available. In publishing and graphic
+                design, Lorem ipsum is a placeholder text commonly used to demonstrate
+              </p>
 
-            <v-card class="mx-auto card1" max-width="100%" outlined>
-              <v-row>
-                <v-col lg="4" cols="12" md="6">
-                  <a href="#">
-                    <v-img
-                      class="mt-4 ml-4"
-                      :src="require('../assets/images/about/about2.png')"
-                      height="250"
-                  /></a>
-                </v-col>
-                <v-col lg="8" cols="12" md="6">
-                  <v-card-text>
-                    <v-btn class="ma-1 white--text" color="#009CA6">Project Name</v-btn>
+              <v-card
+                v-for="n in 3"
+                :key="n"
+                class="mx-auto mt-10 card1"
+                max-width="100%"
+                outlined
+              >
+                <v-row>
+                  <v-col lg="4" cols="12" md="6">
+                    <a href="#">
+                      <v-img
+                        class="mt-4 ml-4"
+                        :src="require('../assets/images/about/about2.png')"
+                        height="250"
+                    /></a>
+                  </v-col>
+                  <v-col lg="8" cols="12" md="6">
+                    <v-card-text>
+                      <v-btn class="ma-1 white--text" color="#009CA6">Project Name</v-btn>
 
-                    <p class="mt-10">
-                      In publishing and graphic design, Lorem ipsum is a placeholder text
-                      commonly used to ipsumIn publishing and graphic design, Lorem ipsum
-                      isIn publishing and graphic design, Lorem ipsum is a placeholder
-                      text commonly used to ipsum In publishing and graphic design, Lorem
-                      ipsum is a placeholder text commonly used to ipsum
-                    </p>
-                    <v-btn class="mt-6 ma-2 moreabout" outlined small> Learn More </v-btn>
-                  </v-card-text>
-                </v-col>
-                <v-row class="borderclass"> </v-row>
-              </v-row>
-            </v-card>
-          </div>
-        </v-col>
-      </v-row>
+                      <p class="mt-10">
+                        In publishing and graphic design, Lorem ipsum is a placeholder
+                        text commonly used to ipsumIn publishing and graphic design, Lorem
+                        ipsum isIn publishing and graphic design, Lorem ipsum is a
+                        placeholder text commonly used to ipsum In publishing and graphic
+                        design, Lorem ipsum is a placeholder text commonly used to ipsum
+                      </p>
+                      <v-btn class="mt-6 ma-2 moreabout" outlined small>
+                        Learn More
+                      </v-btn>
+                    </v-card-text>
+                  </v-col>
+                  <v-row class="borderclass"> </v-row>
+                </v-row>
+              </v-card>
+            </div>
+          </v-col>
+        </v-row>
       </div>
     </div>
 
@@ -153,16 +161,31 @@
             </p>
           </div>
         </v-col>
+
+        <div class="our-team-card">
+          <v-col lg="12" col="12">
+            <v-sheet color="#D1CCBD" max-width="950">
+              <v-slide-group show-arrows>
+                <v-slide-item v-for="n in 15" :key="n">
+                  <v-card class="ma-4" height="300px" width="300px" lg="12" col="6">
+                  </v-card>
+                </v-slide-item>
+              </v-slide-group>
+            </v-sheet>
+          </v-col>
+        </div>
       </v-row>
     </div>
     <!-- End our team -->
 
     <!-- Start Gallery -->
-    <div class="sci-bg sci-bg-1">
+    <div class="sci-bg sci-bg-1 mt-10">
       <div class="container">
         <v-row>
           <v-col lg="12" cols="12" md="12">
             <div class="gallery">
+              <v-row>
+              <v-col lg="8" cols="12" md="12">
               <h1>Gallery</h1>
               <v-divider class="divider"></v-divider><br />
               <p>
@@ -171,9 +194,35 @@
                 without relying on meaningful content. Lorem ipsum may be used as a
                 placeholder before the final copy is available. In publishing and graphic
                 design, Lorem ipsum is a placeholder text commonly used to demonstrate
-              </p>
+              </p></v-col>
+              <v-col lg="4" cols="12" md="12">
+                 <a href="#">
+            <v-img
+              class="mt-4 ml-4"
+              :src="require('../assets/images/latest-news/news3.png')"
+              height="250"
+          /></a></v-col>
+          </v-row>
             </div>
           </v-col>
+          <a href="#">
+            <v-img
+              class="mt-4 ml-4"
+              :src="require('../assets/images/latest-news/news1.png')"
+              height="250"
+          /></a>
+          <a href="#">
+            <v-img
+              class="mt-4 ml-4"
+              :src="require('../assets/images/latest-news/news2.png')"
+              height="250"
+          /></a>
+          <a href="#">
+            <v-img
+              class="mt-4 ml-4"
+              :src="require('../assets/images/latest-news/news4.png')"
+              height="250"
+          /></a>
         </v-row>
       </div>
     </div>
