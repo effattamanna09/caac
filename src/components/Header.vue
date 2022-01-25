@@ -23,8 +23,8 @@
           </v-list-item>
 
           <v-btn
-            ><v-text-field hide-details></v-text-field
-            ><v-icon> mdi-magnify</v-icon></v-btn
+            ><v-icon> mdi-magnify</v-icon><v-text-field hide-details></v-text-field
+            ></v-btn
           >
         </v-list>
       </v-app-bar>

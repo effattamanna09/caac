@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -5,6 +6,7 @@
 
 $bg-color: white;
 $red: #da291c; 
+$Ecru-white: #b4b1a8;
 
 //remove text area border
 .v-text-field > .v-input__control > .v-input__slot:before {
@@ -65,6 +67,28 @@ $red: #da291c;
         border-block-end: $red solid 50px;
     }
 }
+
+//footer
+
+.footer-divider {
+    background-color: #F2A900;
+    width: 100%;
+    
+    border: 6px solid;
+}
+.capitalize {
+    text-transform: capitalize;
+    // border:  yellow solid 2px;
+    // margin: 4px;
+  }
+  .vertical {
+    border-left: 2px solid $Ecru-white;
+    height: 70%;
+    margin-top: 50px;
+    position:absolute;
+    left: 50%;
+}
+
 
 
 

@@ -21,24 +21,23 @@
         <div class="about">
           <v-row>
             <v-col lg="6" cols="12" md="12">
-              <v-row justify="center">
+              <v-row>
                 <v-col lg="3" cols="12" md="12">
                   <a href="#">
-                    <v-img
-                      class="mr-3"
+                    <img
                       :src="require('../assets/images/about/about1.png')"
-                      height="200" /></a></v-col
+                      height="200"
+                      width="400" /></a></v-col
               ></v-row>
               <v-row justify="center">
                 <v-col lg="3" cols="12" md="12">
                   <a href="#">
                     <v-img
-                      class="mr-3"
                       :src="require('../assets/images/about/about2.png')"
                       height="200" /></a></v-col
               ></v-row>
             </v-col>
-            <v-col lg="4" cols="12" md="12">
+            <v-col lg="6" cols="12" md="12">
               <h1>About Us</h1>
               <v-divider class="divider"></v-divider>
               <br />
@@ -89,6 +88,7 @@
     <!-- Start Our projects -->
 
     <div class="container">
+      <div class="sci-bg sci-bg-1">
       <v-row>
         <v-col lg="12" cols="12" md="12">
           <div class="project">
@@ -107,23 +107,23 @@
                 <v-col lg="4" cols="12" md="6">
                   <a href="#">
                     <v-img
-                      class="mr-3"
-                      :src="require('../assets/images/about/about1.png')"
-                      height="200"
+                      class="mt-4 ml-4"
+                      :src="require('../assets/images/about/about2.png')"
+                      height="250"
                   /></a>
                 </v-col>
                 <v-col lg="8" cols="12" md="6">
                   <v-card-text>
-                    <v-btn class="ma-4" color="#009CA6">Project Name</v-btn>
+                    <v-btn class="ma-1 white--text" color="#009CA6">Project Name</v-btn>
 
-                    <p>
+                    <p class="mt-10">
                       In publishing and graphic design, Lorem ipsum is a placeholder text
                       commonly used to ipsumIn publishing and graphic design, Lorem ipsum
                       isIn publishing and graphic design, Lorem ipsum is a placeholder
                       text commonly used to ipsum In publishing and graphic design, Lorem
                       ipsum is a placeholder text commonly used to ipsum
                     </p>
-                    <v-btn class="mt-6 moreabout" outlined small> Learn More </v-btn>
+                    <v-btn class="mt-6 ma-2 moreabout" outlined small> Learn More </v-btn>
                   </v-card-text>
                 </v-col>
                 <v-row class="borderclass"> </v-row>
@@ -132,6 +132,7 @@
           </div>
         </v-col>
       </v-row>
+      </div>
     </div>
 
     <!-- End Our projects -->
@@ -151,7 +152,6 @@
               ipsum is a placeholder text commonly used to demonstrate
             </p>
           </div>
-          
         </v-col>
       </v-row>
     </div>
@@ -193,6 +193,20 @@
               before the final copy is available. In publishing and graphic design, Lorem
               ipsum is a placeholder text commonly used to demonstrate
             </p>
+            <v-sheet class="mx-auto mt-10" max-width="100%">
+              <v-slide-group>
+                <v-slide-item v-for="n in 25" :key="n" v-slot="{ active, toggle }">
+                  <v-btn :input-value="active" depressed @click="toggle">
+                    <a href="#">
+                      <img
+                        class="mr-3"
+                        :src="require('../assets/images/partner.png')"
+                        height="50"
+                    /></a>
+                  </v-btn>
+                </v-slide-item>
+              </v-slide-group>
+            </v-sheet>
           </div>
         </v-col>
       </v-row>
@@ -211,7 +225,6 @@ export default {
 
   data: () => ({
     items: [
-      
       {
         src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
       },
