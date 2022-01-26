@@ -1,12 +1,12 @@
+$bg-color: white;
+$red: #da291c;
+$Ecru-white: #b4b1a8;
+$yellow: #f2a900;
 
 * {
     padding: 0;
     margin: 0;
 }
-
-$bg-color: white;
-$red: #da291c; 
-$Ecru-white: #b4b1a8;
 
 //remove text area border
 .v-text-field > .v-input__control > .v-input__slot:before {
@@ -17,6 +17,16 @@ $Ecru-white: #b4b1a8;
 }
 
 //  Home page CSS
+// Banner CSS
+.banner-slider {
+    margin: 100px 200px 0px;
+    color: white;
+}
+.red-divider {
+    background-color: $red;
+    width: 100%;
+    border: 6px solid;
+}
 
 // background image css
 .sci-bg {
@@ -24,7 +34,6 @@ $Ecru-white: #b4b1a8;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top center;
-   
 }
 
 .sci-bg-0 {
@@ -68,44 +77,61 @@ $Ecru-white: #b4b1a8;
     }
 }
 
-
-
 //our team css
 .our-team-card {
-
- margin-left: 300px;
-
-  
-  }
+    margin-left: 300px;
+}
+.card-details {
+    background-color: $red;
+    color: white;
+}
+.team-details-card {
+    border: black solid 1px !important;
+}
 
 //footer
 
-.footer-divider {
-    background-color: #F2A900;
-    width: 100%;
-    
-    border: 6px solid;
-}
 .capitalize {
     text-transform: capitalize;
     // border:  yellow solid 2px;
     // margin: 4px;
-  }
-  .vertical {
+}
+.footer-divider {
+    background-color: $yellow;
+    width: 100%;
+    border: 6px solid;
+}
+.footer-driver-1 {
+    background-color: $yellow;
+    width: 50%;
+    border: 1px solid;
+}
+.footer-driver-2 {
+    background-color: $Ecru-white;
+    width: 60%;
+    border: 1px solid;
+}
+.vertical {
     border-left: 2px solid $Ecru-white;
     height: 70%;
     margin-top: 50px;
-    position:absolute;
+    position: absolute;
     left: 50%;
 }
-
-
-
 
 //Start Top bar Btn Responsive
 @media (max-width: 30em) {
     .header {
         visibility: hidden;
+    }
+    .vertical {
+        visibility: hidden;
+    }
+    .banner-slider {
+        margin: 20px 10px 0px;
+    }
+    .our-team-card {
+        margin-left: 0px;
     }
 }
 

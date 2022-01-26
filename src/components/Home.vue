@@ -1,17 +1,30 @@
 <template>
   <base-layout>
     <!-- Start Slider -->
-    <v-carousel>
-      <v-carousel-item
-        v-for="(item, i) in items"
-        :key="i"
-        :src="item.src"
-        reverse-transition="fade-transition"
-        transition="fade-transition"
-      >
-        <h1>hello</h1></v-carousel-item
-      >
+    <v-carousel hide-delimiters>
+      <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
+        <div class="banner-slider">
+         
+          <h1>
+            ARMED CONFLICT <br />
+            CHILDREN<br />
+          </h1>
+          <h2>in Africa</h2>
+          <v-divider class="footer-driver-1"></v-divider>
+          <p>
+            Reference site about Lorem Ipsum, giving information <br> on its origins, as well
+            as a random Lipsum generator.
+          </p>
+          <v-col lg="4">
+           <v-divider class="footer-driver-2"></v-divider>
+
+          </v-col>
+        </div>
+      </v-carousel-item>
+     
     </v-carousel>
+     <v-divider class="red-divider"></v-divider>
+    
     <!-- End Slider -->
 
     <!-- start about us -->
@@ -164,10 +177,22 @@
 
         <div class="our-team-card">
           <v-col lg="12" col="12">
-            <v-sheet color="#D1CCBD" max-width="950">
+            <v-sheet color="#D1CCBD" max-width="950" height="400px">
               <v-slide-group show-arrows>
                 <v-slide-item v-for="n in 15" :key="n">
-                  <v-card class="ma-4" height="300px" width="300px" lg="12" col="6">
+                  <v-card class="mx-auto mr-3 team-details-card" max-width="300">
+                    <a href="#">
+                      <v-img
+                        class="mt-4"
+                        :src="require('../assets/images/latest-news/news3.png')"
+                        height="250"
+                    /></a>
+
+                    <div class="card-details">
+                      <v-card-title> Name </v-card-title>
+
+                      <v-card-subtitle> Designation </v-card-subtitle>
+                    </div>
                   </v-card>
                 </v-slide-item>
               </v-slide-group>
@@ -185,24 +210,26 @@
           <v-col lg="12" cols="12" md="12">
             <div class="gallery">
               <v-row>
-              <v-col lg="8" cols="12" md="12">
-              <h1>Gallery</h1>
-              <v-divider class="divider"></v-divider><br />
-              <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder text
-                commonly used to demonstrate the visual form of a document or a typeface
-                without relying on meaningful content. Lorem ipsum may be used as a
-                placeholder before the final copy is available. In publishing and graphic
-                design, Lorem ipsum is a placeholder text commonly used to demonstrate
-              </p></v-col>
-              <v-col lg="4" cols="12" md="12">
-                 <a href="#">
-            <v-img
-              class="mt-4 ml-4"
-              :src="require('../assets/images/latest-news/news3.png')"
-              height="250"
-          /></a></v-col>
-          </v-row>
+                <v-col lg="8" cols="12" md="12">
+                  <h1>Gallery</h1>
+                  <v-divider class="divider"></v-divider><br />
+                  <p>
+                    In publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used to demonstrate the visual form of a document or a
+                    typeface without relying on meaningful content. Lorem ipsum may be
+                    used as a placeholder before the final copy is available. In
+                    publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used to demonstrate
+                  </p></v-col
+                >
+                <v-col lg="4" cols="12" md="12">
+                  <a href="#">
+                    <v-img
+                      class="mt-4 ml-4"
+                      :src="require('../assets/images/latest-news/news3.png')"
+                      height="250" /></a
+                ></v-col>
+              </v-row>
             </div>
           </v-col>
           <a href="#">
@@ -275,10 +302,16 @@ export default {
   data: () => ({
     items: [
       {
+        src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
+      },
+      {
         src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
       },
       {
         src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
+      },
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
       },
     ],
   }),
