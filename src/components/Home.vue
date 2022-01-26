@@ -4,7 +4,6 @@
     <v-carousel hide-delimiters>
       <v-carousel-item v-for="(item, i) in items" :key="i" :src="item.src">
         <div class="banner-slider">
-         
           <h1>
             ARMED CONFLICT <br />
             CHILDREN<br />
@@ -12,19 +11,17 @@
           <h2>in Africa</h2>
           <v-divider class="footer-driver-1"></v-divider>
           <p>
-            Reference site about Lorem Ipsum, giving information <br> on its origins, as well
-            as a random Lipsum generator.
+            Reference site about Lorem Ipsum, giving information <br />
+            on its origins, as well as a random Lipsum generator.
           </p>
           <v-col lg="4" cols="6">
-           <v-divider class="footer-driver-2"></v-divider>
-
+            <v-divider class="footer-driver-2"></v-divider>
           </v-col>
         </div>
       </v-carousel-item>
-     
     </v-carousel>
-     <v-divider class="red-divider"></v-divider>
-    
+    <v-divider class="red-divider"></v-divider>
+
     <!-- End Slider -->
 
     <!-- start about us -->
@@ -42,7 +39,6 @@
                       height="200"
                       width="400" /></a></v-col
               ></v-row>
-             
             </v-col>
             <v-col lg="6" cols="12" md="12">
               <h1>About Us</h1>
@@ -87,6 +83,20 @@
               </p>
             </div>
           </v-col>
+           <v-card class="mx-auto team-details-card" max-width="300" v-for="n in 3" :key="n">
+                    <a href="#">
+                      <v-img
+                        class="mt-4"
+                        :src="require('../assets/images/latest-news/news3.png')"
+                        height="250"
+                    /></a>
+
+                    <div class="card-details">
+                      <v-card-title> Name </v-card-title>
+
+                      <v-card-subtitle> Designation </v-card-subtitle>
+                    </div>
+                  </v-card>
         </v-row>
       </div>
     </div>
@@ -244,7 +254,11 @@
               :src="require('../assets/images/latest-news/news4.png')"
               height="250"
           /></a>
+          <v-row justify="center" class="ma-5">
+            <v-btn outlined small> More About </v-btn>
+          </v-row>
         </v-row>
+
         <v-divider class="red-divider"></v-divider>
       </div>
     </div>
