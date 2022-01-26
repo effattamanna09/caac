@@ -7,30 +7,52 @@
     </v-app-bar>
     <!-- End top bar -->
     <!-- start navigation -->
-    <div>
+  
       <v-app-bar color="#D1CCBD" elevation="0">
-        <v-app-bar-nav-icon
-          v-model="drawer"
-          @click.stop="drawer = !drawer"
-          class="hidden"
-        ></v-app-bar-nav-icon>
-        <v-spacer></v-spacer>
-        <v-list class="d-flex align-center header" color="#D1CCBD">
-          <v-list-item v-for="link in links" :key="link.text">
-            <v-list-item-title class="font-class-name"
-              >{{ link.text }}
-            </v-list-item-title>
-          </v-list-item>
+        <v-toolbar-items class="hidden-xs-only"
+          ><div class="desktop-header">
+            <v-list class="d-flex align-center header" color="#D1CCBD">
+              <v-list-item v-for="link in links" :key="link.text">
+                <v-list-item-title class="font-class-name"
+                  >{{ link.text }}
+                </v-list-item-title>
+              </v-list-item>
 
-          <v-btn
-            ><v-icon> mdi-magnify</v-icon><v-text-field hide-details></v-text-field
-            ></v-btn
-          >
-        </v-list>
+              <v-btn
+                ><v-icon> mdi-magnify</v-icon><v-text-field hide-details></v-text-field
+              ></v-btn>
+            </v-list>
+          </div>
+          <v-app-bar-nav-icon
+            v-model="drawer"
+            @click.stop="drawer = !drawer"
+            class="hidden"
+          ></v-app-bar-nav-icon
+        ></v-toolbar-items>
+
+        <div class="hidden-sm-and-up">
+          <v-menu offset-y>
+            <template v-slot:activator="{ on }">
+              <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
+            </template>
+
+            <v-list class="header" color="#D1CCBD">
+              <v-list-item v-for="link in links" :key="link.text">
+                <v-list-item-title class="font-class-name"
+                  >{{ link.text }}
+                </v-list-item-title>
+              </v-list-item>
+
+              <v-btn
+                ><v-icon> mdi-magnify</v-icon><v-text-field hide-details></v-text-field
+              ></v-btn>
+            </v-list>
+          </v-menu>
+        </div>
       </v-app-bar>
     </div>
     <!-- End navigation -->
-  </div>
+ 
 </template>
 
 <script>

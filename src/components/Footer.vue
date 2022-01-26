@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-    <v-img :src="require('../assets/images/footer1.png')" height="150" width="100%" />
+    <v-img :src="require('../assets/images/footer1.png')" height="150" width="100%" class="mt-15"/>
 
     <v-divider class="footer-divider"></v-divider>
     <v-footer dark padless>

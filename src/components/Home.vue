@@ -15,7 +15,7 @@
             Reference site about Lorem Ipsum, giving information <br> on its origins, as well
             as a random Lipsum generator.
           </p>
-          <v-col lg="4">
+          <v-col lg="4" cols="6">
            <v-divider class="footer-driver-2"></v-divider>
 
           </v-col>
@@ -31,7 +31,7 @@
 
     <div class="sci-bg">
       <div class="container">
-        <div class="about">
+        <div class="about mt-15">
           <v-row>
             <v-col lg="6" cols="12" md="12">
               <v-row>
@@ -42,13 +42,7 @@
                       height="200"
                       width="400" /></a></v-col
               ></v-row>
-              <v-row justify="center">
-                <v-col lg="3" cols="12" md="12">
-                  <a href="#">
-                    <v-img
-                      :src="require('../assets/images/about/about2.png')"
-                      height="200" /></a></v-col
-              ></v-row>
+             
             </v-col>
             <v-col lg="6" cols="12" md="12">
               <h1>About Us</h1>
@@ -77,7 +71,7 @@
     <!-- End about us -->
 
     <!-- Start Latest news -->
-    <div class="sci-bg sci-bg-2">
+    <div class="sci-bg sci-bg-2 mt-15">
       <div class="container">
         <v-row>
           <v-col lg="12" cols="12" md="12">
@@ -104,7 +98,7 @@
       <div class="sci-bg sci-bg-1">
         <v-row>
           <v-col lg="12" cols="12" md="12">
-            <div class="project">
+            <div class="project mt-15">
               <h1>Our Project</h1>
               <v-divider class="divider"></v-divider><br />
               <p>
@@ -162,7 +156,7 @@
     <div class="container">
       <v-row>
         <v-col lg="12" cols="12" md="12">
-          <div class="team">
+          <div class="team mt-15">
             <h1>Our Team</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
@@ -208,7 +202,7 @@
       <div class="container">
         <v-row>
           <v-col lg="12" cols="12" md="12">
-            <div class="gallery">
+            <div class="gallery mt-15">
               <v-row>
                 <v-col lg="8" cols="12" md="12">
                   <h1>Gallery</h1>
@@ -251,6 +245,7 @@
               height="250"
           /></a>
         </v-row>
+        <v-divider class="red-divider"></v-divider>
       </div>
     </div>
     <!-- End Gallery -->
@@ -259,7 +254,7 @@
     <div class="container">
       <v-row>
         <v-col lg="12" cols="12" md="12">
-          <div class="partner">
+          <div class="partner mt-15">
             <h1>Partners</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
