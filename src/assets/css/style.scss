@@ -94,6 +94,13 @@ $yellow: #f2a900;
 //our team css
 .our-team-card {
     margin-left: 300px;
+    
+}
+.our-team-background{
+    color: $Ecru-white;
+    max-width: 950px;
+    height: 400px;
+   
 }
 .card-details {
     background-color: $red;
@@ -134,6 +141,7 @@ $yellow: #f2a900;
 }
 
 //Start Top bar Btn Responsive
+//mobile
 @media (max-width: 30em) {
     // .header {
     //     visibility: hidden;
@@ -146,6 +154,10 @@ $yellow: #f2a900;
     }
     .our-team-card {
         margin-left: 0px;
+    }
+    .our-team-background{
+        max-width: 350px;
+        height: 370px;
     }
 }
 

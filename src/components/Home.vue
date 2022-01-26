@@ -171,7 +171,7 @@
 
         <div class="our-team-card">
           <v-col lg="12" col="12">
-            <v-sheet color="#D1CCBD" max-width="950" height="400px">
+            <v-sheet color="#D1CCBD" class="our-team-background">
               <v-slide-group show-arrows>
                 <v-slide-item v-for="n in 15" :key="n">
                   <v-card class="mx-auto mr-3 team-details-card" max-width="300">
