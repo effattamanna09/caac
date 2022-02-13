@@ -98,24 +98,26 @@ $yellow: #f2a900;
 
 
 //our team css
-.our-team-card {
-   
-    margin-left: 300px;
+.red_bg{
+    .theme--light.v-icon.v-icon.v-icon--disabled {
+        color: white !important;
+    }
+    .v-icon.v-icon {
+        font-size: 50px;
+        top: 70px;
+        color: white;
+        border: 1px solid white;
+        border-radius: 40px;
+    }
+    .v-slide-group__next, .v-slide-group__prev {
+        margin: 70px;
+    }
 }
-.our-team-background {
-    color: $Ecru-white;
-    max-width: 950px;
-    height: 400px;
-}
+
 .card-details {
     background-color: $red;
     color: white;
 }
-.team-details-card {
-    // top: -50px;
-    border: black solid 1px !important;
-}
-
 //footer
 
 .capitalize {
@@ -157,13 +159,6 @@ $yellow: #f2a900;
     }
     .banner-slider {
         margin: 100px 10px 0px;
-    }
-    .our-team-card {
-        margin-left: 0px;
-    }
-    .our-team-background {
-        max-width: 350px;
-        height: 370px;
     }
     .search-btn-header {
         width: 70px;

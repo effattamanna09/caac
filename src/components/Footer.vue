@@ -1,8 +1,6 @@
 <template>
   <div class="footer">
-    <v-img :src="require('../assets/images/footer1.png')" height="150" width="100%" class="mt-15"/>
-
-    <v-divider class="footer-divider"></v-divider>
+ <v-divider class="footer-divider"></v-divider>
     <v-footer dark padless>
       <v-card class="black white--text flex" width="1920px" flat>
         <v-col class="mt-10 mr-4" lg="12">

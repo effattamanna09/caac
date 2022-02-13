@@ -23,7 +23,23 @@
     <v-divider class="red-divider"></v-divider>
 
     <!-- End Slider -->
-
+    <div class="sidebar">
+      <div class="social facebook">
+        <a href=" https://www.facebook.com " target="_blank">
+          <p>Like on Facebook <i class="fa fa-facebook"></i></p>
+        </a>
+      </div>
+      <div class="social twitter">
+        <a href=" https://www.twitter.com " target="_blank">
+          <p>Follow on Twitter<i class="fa fa-twitter"></i></p>
+        </a>
+      </div>
+      <div class="social google">
+        <a href=" https://www.plus.google.com " target="_blank">
+          <p>Google+<i class="fa fa-google-plus"></i></p>
+        </a>
+      </div>
+    </div>
     <!-- start about us -->
 
     <div class="sci-bg">
@@ -45,21 +61,18 @@
               <v-divider class="divider"></v-divider>
               <br />
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface
+                without relying on meaningful content. Lorem ipsum may be used as a
+                placeholder before the final copy is available. In publishing and graphic
+                design, Lorem ipsum is a placeholder text commonly used to demonstrate
               </p>
               <v-btn class="mt-6 moreabout" outlined small> More About </v-btn>
               <v-col class="aboutBtn" cols="12">
                 <v-btn class="mr-5 pa-4" x-large outlined color="#009CA6">
                   Our Mission
                 </v-btn>
-                <v-btn class="pa-4" x-large outlined color="#009CA6">
-                  Our Vision
-                </v-btn>
+                <v-btn class="pa-4" x-large outlined color="#009CA6"> Our Vision </v-btn>
               </v-col>
             </v-col>
           </v-row>
@@ -78,12 +91,11 @@
               <h1>Latest News</h1>
               <v-divider class="divider"></v-divider><br />
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface
+                without relying on meaningful content. Lorem ipsum may be used as a
+                placeholder before the final copy is available. In publishing and graphic
+                design, Lorem ipsum is a placeholder text commonly used to demonstrate
               </p>
             </div>
           </v-col>
@@ -121,12 +133,11 @@
               <h1>Our Project</h1>
               <v-divider class="divider"></v-divider><br />
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface
+                without relying on meaningful content. Lorem ipsum may be used as a
+                placeholder before the final copy is available. In publishing and graphic
+                design, Lorem ipsum is a placeholder text commonly used to demonstrate
               </p>
 
               <v-card
@@ -147,17 +158,14 @@
                   </v-col>
                   <v-col lg="8" cols="12" md="6">
                     <v-card-text>
-                      <v-btn class="ma-1 white--text" color="#009CA6"
-                        >Project Name</v-btn
-                      >
+                      <v-btn class="ma-1 white--text" color="#009CA6">Project Name</v-btn>
 
                       <p class="mt-10">
-                        In publishing and graphic design, Lorem ipsum is a
-                        placeholder text commonly used to ipsumIn publishing and
-                        graphic design, Lorem ipsum isIn publishing and graphic
-                        design, Lorem ipsum is a placeholder text commonly used
-                        to ipsum In publishing and graphic design, Lorem ipsum
-                        is a placeholder text commonly used to ipsum
+                        In publishing and graphic design, Lorem ipsum is a placeholder
+                        text commonly used to ipsumIn publishing and graphic design, Lorem
+                        ipsum isIn publishing and graphic design, Lorem ipsum is a
+                        placeholder text commonly used to ipsum In publishing and graphic
+                        design, Lorem ipsum is a placeholder text commonly used to ipsum
                       </p>
                       <v-btn class="mt-6 ma-2 moreabout" outlined small>
                         Learn More
@@ -183,12 +191,11 @@
             <h1>Our Team</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available. In
-              publishing and graphic design, Lorem ipsum is a placeholder text
-              commonly used to demonstrate
+              In publishing and graphic design, Lorem ipsum is a placeholder text commonly
+              used to demonstrate the visual form of a document or a typeface without
+              relying on meaningful content. Lorem ipsum may be used as a placeholder
+              before the final copy is available. In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to demonstrate
             </p>
           </div>
         </v-col>
@@ -196,35 +203,27 @@
     </div>
     <div class="red_bg" style="float: right">
       <div class="container">
-        <v-col md="3"></v-col>
-        <v-col md="9">
+        <v-col md="2"></v-col>
+        <v-col md="10">
           <v-row>
             <v-col md="12" col="12">
-              <v-sheet color="#D1CCBD" class="our-team-background">
-                <v-slide-group show-arrows>
-                  <v-slide-item v-for="n in 15" :key="n">
-                    <v-card
-                      class="mx-auto mr-3 team-details-card"
-                      max-width="300"
-                    >
-                      <a href="#">
-                        <v-img
-                          class="mt-4"
-                          :src="
-                            require('../assets/images/latest-news/news3.png')
-                          "
-                          height="250"
-                      /></a>
+              <v-slide-group show-arrows>
+                <v-slide-item v-for="n in 10" :key="n">
+                  <v-card class="mr-10">
+                    <a href="#">
+                      <v-img
+                        class=""
+                        :src="require('../assets/images/our-team1.png')"
+                        height="250"
+                        width="250"
+                    /></a>
 
-                      <div class="card-details">
-                        <v-card-title> Name </v-card-title>
-
-                        <v-card-subtitle> Designation </v-card-subtitle>
-                      </div>
-                    </v-card>
-                  </v-slide-item>
-                </v-slide-group>
-              </v-sheet>
+                    <div class="card-details">
+                      <v-card-title> Name </v-card-title>
+                    </div>
+                  </v-card>
+                </v-slide-item>
+              </v-slide-group>
             </v-col>
           </v-row>
         </v-col>
@@ -244,13 +243,12 @@
                   <h1>Gallery</h1>
                   <v-divider class="divider"></v-divider><br />
                   <p>
-                    In publishing and graphic design, Lorem ipsum is a
-                    placeholder text commonly used to demonstrate the visual
-                    form of a document or a typeface without relying on
-                    meaningful content. Lorem ipsum may be used as a placeholder
-                    before the final copy is available. In publishing and
-                    graphic design, Lorem ipsum is a placeholder text commonly
-                    used to demonstrate
+                    In publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used to demonstrate the visual form of a document or a
+                    typeface without relying on meaningful content. Lorem ipsum may be
+                    used as a placeholder before the final copy is available. In
+                    publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used to demonstrate
                   </p></v-col
                 >
                 <v-col lg="4" cols="12" md="12">
@@ -299,21 +297,16 @@
             <h1>Partners</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available. In
-              publishing and graphic design, Lorem ipsum is a placeholder text
-              commonly used to demonstrate
+              In publishing and graphic design, Lorem ipsum is a placeholder text commonly
+              used to demonstrate the visual form of a document or a typeface without
+              relying on meaningful content. Lorem ipsum may be used as a placeholder
+              before the final copy is available. In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to demonstrate
             </p>
 
             <v-sheet class="mx-auto mt-10" max-width="100%">
               <v-slide-group>
-                <v-slide-item
-                  v-for="n in 25"
-                  :key="n"
-                  v-slot="{ active, toggle }"
-                >
+                <v-slide-item v-for="n in 25" :key="n" v-slot="{ active, toggle }">
                   <v-btn :input-value="active" depressed @click="toggle">
                     <a href="#">
                       <img
@@ -359,3 +352,92 @@ export default {
   }),
 };
 </script>
+<style scoped>
+a {
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 3;
+}
+
+p {
+  margin: 0px;
+}
+
+.sidebar {
+  height: auto;
+  width: 0px;
+  position: fixed;
+  text-align: center;
+  top: 35vh;
+  padding: 10px;
+}
+
+p i {
+  left: 30px;
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 24px;
+}
+
+.social {
+  margin-left: -200px;
+  width: 230px;
+  padding: 0;
+  display: inline-table;
+  height: 0px;
+  background-color: rgba(128, 128, 128, 0.73);
+  -moz-transition-property: margin-left;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-delay: 0.2s;
+  -ms-transition-property: margin-left;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-delay: 0.2s;
+  -o-transition-property: margin-left;
+  -o-transition-duration: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-property: margin-left;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  box-shadow: 0px 0px 6px 0px #3e3d3d;
+  cursor: pointer;
+}
+
+.social:hover {
+  margin-left: -30px;
+  width: 230px;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #4099ff;
+}
+
+.google {
+  background-color: #dd4b39;
+}
+
+.linkedin p i {
+  left: 20px;
+}
+
+.google p i {
+  left: 35px;
+}
+
+.youtube p i {
+  left: 18px;
+}
+
+.youtube:hover {
+  background-color: #e52d27;
+}
+
+.linkedin:hover {
+  background-color: #0976b4;
+}
+</style>
