@@ -197,9 +197,9 @@
     <div class="red_bg" style="float: right">
       <div class="container">
         <v-col md="3"></v-col>
-        <v-col md="9">
+        <v-col md="8">
           <v-row>
-            <v-col md="12" col="12">
+            <v-col lg="12" col="12">
               <v-sheet color="#D1CCBD" class="our-team-background">
                 <v-slide-group show-arrows>
                   <v-slide-item v-for="n in 15" :key="n">

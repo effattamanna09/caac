@@ -45,21 +45,18 @@
               <v-divider class="divider"></v-divider>
               <br />
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface
+                without relying on meaningful content. Lorem ipsum may be used as a
+                placeholder before the final copy is available. In publishing and graphic
+                design, Lorem ipsum is a placeholder text commonly used to demonstrate
               </p>
               <v-btn class="mt-6 moreabout" outlined small> More About </v-btn>
               <v-col class="aboutBtn" cols="12">
                 <v-btn class="mr-5 pa-4" x-large outlined color="#009CA6">
                   Our Mission
                 </v-btn>
-                <v-btn class="pa-4" x-large outlined color="#009CA6">
-                  Our Vision
-                </v-btn>
+                <v-btn class="pa-4" x-large outlined color="#009CA6"> Our Vision </v-btn>
               </v-col>
             </v-col>
           </v-row>
@@ -78,12 +75,11 @@
               <h1>Latest News</h1>
               <v-divider class="divider"></v-divider><br />
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface
+                without relying on meaningful content. Lorem ipsum may be used as a
+                placeholder before the final copy is available. In publishing and graphic
+                design, Lorem ipsum is a placeholder text commonly used to demonstrate
               </p>
             </div>
           </v-col>
@@ -121,12 +117,11 @@
               <h1>Our Project</h1>
               <v-divider class="divider"></v-divider><br />
               <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate the visual form of a document
-                or a typeface without relying on meaningful content. Lorem ipsum
-                may be used as a placeholder before the final copy is available.
-                In publishing and graphic design, Lorem ipsum is a placeholder
-                text commonly used to demonstrate
+                In publishing and graphic design, Lorem ipsum is a placeholder text
+                commonly used to demonstrate the visual form of a document or a typeface
+                without relying on meaningful content. Lorem ipsum may be used as a
+                placeholder before the final copy is available. In publishing and graphic
+                design, Lorem ipsum is a placeholder text commonly used to demonstrate
               </p>
 
               <v-card
@@ -147,17 +142,14 @@
                   </v-col>
                   <v-col lg="8" cols="12" md="6">
                     <v-card-text>
-                      <v-btn class="ma-1 white--text" color="#009CA6"
-                        >Project Name</v-btn
-                      >
+                      <v-btn class="ma-1 white--text" color="#009CA6">Project Name</v-btn>
 
                       <p class="mt-10">
-                        In publishing and graphic design, Lorem ipsum is a
-                        placeholder text commonly used to ipsumIn publishing and
-                        graphic design, Lorem ipsum isIn publishing and graphic
-                        design, Lorem ipsum is a placeholder text commonly used
-                        to ipsum In publishing and graphic design, Lorem ipsum
-                        is a placeholder text commonly used to ipsum
+                        In publishing and graphic design, Lorem ipsum is a placeholder
+                        text commonly used to ipsumIn publishing and graphic design, Lorem
+                        ipsum isIn publishing and graphic design, Lorem ipsum is a
+                        placeholder text commonly used to ipsum In publishing and graphic
+                        design, Lorem ipsum is a placeholder text commonly used to ipsum
                       </p>
                       <v-btn class="mt-6 ma-2 moreabout" outlined small>
                         Learn More
@@ -183,54 +175,46 @@
             <h1>Our Team</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available. In
-              publishing and graphic design, Lorem ipsum is a placeholder text
-              commonly used to demonstrate
+              In publishing and graphic design, Lorem ipsum is a placeholder text commonly
+              used to demonstrate the visual form of a document or a typeface without
+              relying on meaningful content. Lorem ipsum may be used as a placeholder
+              before the final copy is available. In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to demonstrate
             </p>
           </div>
         </v-col>
       </v-row>
     </div>
-    <div class="red_bg" style="float: right">
-      <div class="container">
-        <v-col md="3"></v-col>
-        <v-col md="9">
-          <v-row>
-            <v-col md="12" col="12">
-              <v-sheet color="#D1CCBD" class="our-team-background">
-                <v-slide-group show-arrows>
-                  <v-slide-item v-for="n in 15" :key="n">
-                    <v-card
-                      class="mx-auto mr-3 team-details-card"
-                      max-width="300"
-                    >
-                      <a href="#">
-                        <v-img
-                          class="mt-4"
-                          :src="
-                            require('../assets/images/latest-news/news3.png')
-                          "
-                          height="250"
-                      /></a>
+    <div class="container red_bg" style="float: right;">
+      <v-col md="2"></v-col>
+      <v-col md="8">
+        <v-row>
+          <v-col lg="12" col="12">
+            <v-sheet color="#D1CCBD" class="our-team-background">
+              <v-slide-group show-arrows>
+                <v-slide-item v-for="n in 15" :key="n">
+                  <v-card class="mx-auto mr-3 team-details-card" max-width="300">
+                    <a href="#">
+                      <v-img
+                        class="mt-4"
+                        :src="require('../assets/images/latest-news/news3.png')"
+                        height="250"
+                    /></a>
 
-                      <div class="card-details">
-                        <v-card-title> Name </v-card-title>
+                    <div class="card-details">
+                      <v-card-title> Name </v-card-title>
 
-                        <v-card-subtitle> Designation </v-card-subtitle>
-                      </div>
-                    </v-card>
-                  </v-slide-item>
-                </v-slide-group>
-              </v-sheet>
-            </v-col>
-          </v-row>
-        </v-col>
-      </div>
+                      <v-card-subtitle> Designation </v-card-subtitle>
+                    </div>
+                  </v-card>
+                </v-slide-item>
+              </v-slide-group>
+            </v-sheet>
+          </v-col>
+        </v-row>
+      </v-col>
     </div>
-    <div style="clear: both"></div>
+ <div style="clear: both;"></div>
     <!-- End our team -->
 
     <!-- Start Gallery -->
@@ -244,13 +228,12 @@
                   <h1>Gallery</h1>
                   <v-divider class="divider"></v-divider><br />
                   <p>
-                    In publishing and graphic design, Lorem ipsum is a
-                    placeholder text commonly used to demonstrate the visual
-                    form of a document or a typeface without relying on
-                    meaningful content. Lorem ipsum may be used as a placeholder
-                    before the final copy is available. In publishing and
-                    graphic design, Lorem ipsum is a placeholder text commonly
-                    used to demonstrate
+                    In publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used to demonstrate the visual form of a document or a
+                    typeface without relying on meaningful content. Lorem ipsum may be
+                    used as a placeholder before the final copy is available. In
+                    publishing and graphic design, Lorem ipsum is a placeholder text
+                    commonly used to demonstrate
                   </p></v-col
                 >
                 <v-col lg="4" cols="12" md="12">
@@ -299,21 +282,16 @@
             <h1>Partners</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
-              In publishing and graphic design, Lorem ipsum is a placeholder
-              text commonly used to demonstrate the visual form of a document or
-              a typeface without relying on meaningful content. Lorem ipsum may
-              be used as a placeholder before the final copy is available. In
-              publishing and graphic design, Lorem ipsum is a placeholder text
-              commonly used to demonstrate
+              In publishing and graphic design, Lorem ipsum is a placeholder text commonly
+              used to demonstrate the visual form of a document or a typeface without
+              relying on meaningful content. Lorem ipsum may be used as a placeholder
+              before the final copy is available. In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to demonstrate
             </p>
 
             <v-sheet class="mx-auto mt-10" max-width="100%">
               <v-slide-group>
-                <v-slide-item
-                  v-for="n in 25"
-                  :key="n"
-                  v-slot="{ active, toggle }"
-                >
+                <v-slide-item v-for="n in 25" :key="n" v-slot="{ active, toggle }">
                   <v-btn :input-value="active" depressed @click="toggle">
                     <a href="#">
                       <img
