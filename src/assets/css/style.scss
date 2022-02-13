@@ -9,17 +9,15 @@ $yellow: #f2a900;
 }
 // @import url(//db.onlinewebfonts.com/c/ca600d01171a97410ea97578addeb476?family=Gill+Sans+Infant+Std);
 
-.desktop-header{
+.desktop-header {
     margin-left: 300px;
-
 }
-.container{
-    font-family: 'tradegothicltcom-bdcn20';
+.container {
+    font-family: "tradegothicltcom-bdcn20";
 }
-.header{
-   font-family: 'Trade Gothic LT';
+.header {
+    font-family: "Trade Gothic LT";
 }
-
 
 //remove text area border
 .v-text-field > .v-input__control > .v-input__slot:before {
@@ -51,7 +49,6 @@ $yellow: #f2a900;
 
 .sci-bg-0 {
     background-image: url("assets/images/footer.png");
- 
 }
 .sci-bg-1 {
     background-image: url("assets/images/gallery-background.png");
@@ -89,19 +86,19 @@ $yellow: #f2a900;
         border-radius: 3px;
         border-block-end: $red solid 50px;
     }
+
 }
+
 
 //our team css
 .our-team-card {
+   
     margin-left: 300px;
-    
 }
-.our-team-background{
+.our-team-background {
     color: $Ecru-white;
     max-width: 950px;
     height: 400px;
-   
-   
 }
 .card-details {
     background-color: $red;
@@ -157,9 +154,13 @@ $yellow: #f2a900;
     .our-team-card {
         margin-left: 0px;
     }
-    .our-team-background{
+    .our-team-background {
         max-width: 350px;
         height: 370px;
+    }
+    .search-btn-header {
+        width: 70px;
+        box-shadow: none;
     }
 }
 

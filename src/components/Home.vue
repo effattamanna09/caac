@@ -83,20 +83,25 @@
               </p>
             </div>
           </v-col>
-           <v-card class="mx-auto team-details-card" max-width="300" v-for="n in 3" :key="n">
-                    <a href="#">
-                      <v-img
-                        class="mt-4"
-                        :src="require('../assets/images/latest-news/news3.png')"
-                        height="250"
-                    /></a>
+          <v-card
+            class="mx-auto mt-5 team-details-card"
+            max-width="300"
+            v-for="n in 6"
+            :key="n"
+          >
+            <a href="#">
+              <v-img
+                class="mt-4"
+                :src="require('../assets/images/latest-news/news3.png')"
+                height="250"
+            /></a>
 
-                    <div class="card-details">
-                      <v-card-title> Name </v-card-title>
+            <div class="card-details">
+              <v-card-title> Name </v-card-title>
 
-                      <v-card-subtitle> Designation </v-card-subtitle>
-                    </div>
-                  </v-card>
+              <v-card-subtitle> Designation </v-card-subtitle>
+            </div>
+          </v-card>
         </v-row>
       </div>
     </div>
@@ -178,8 +183,12 @@
             </p>
           </div>
         </v-col>
-
-        <div class="our-team-card">
+      </v-row>
+    </div>
+    <div class="container red" style="float: right;">
+      <v-col lg="3" col="3"></v-col>
+      <v-col lg="9" col="9">
+        <v-row>
           <v-col lg="12" col="12">
             <v-sheet color="#D1CCBD" class="our-team-background">
               <v-slide-group show-arrows>
@@ -202,9 +211,10 @@
               </v-slide-group>
             </v-sheet>
           </v-col>
-        </div>
-      </v-row>
+        </v-row>
+      </v-col>
     </div>
+ <div style="clear: both;"></div>
     <!-- End our team -->
 
     <!-- Start Gallery -->
@@ -278,6 +288,7 @@
               before the final copy is available. In publishing and graphic design, Lorem
               ipsum is a placeholder text commonly used to demonstrate
             </p>
+
             <v-sheet class="mx-auto mt-10" max-width="100%">
               <v-slide-group>
                 <v-slide-item v-for="n in 25" :key="n" v-slot="{ active, toggle }">
