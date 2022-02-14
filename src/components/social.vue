@@ -2,17 +2,30 @@
   <div class="sidebar">
     <div class="social facebook">
       <a href=" https://www.facebook.com " target="_blank">
-        <p>Like on Facebook <i class="fa fa-facebook"></i></p>
+        <p>
+          <v-icon> mdi-facebook</v-icon>
+        </p>
       </a>
     </div>
     <div class="social twitter">
       <a href=" https://www.twitter.com " target="_blank">
-        <p>Follow on Twitter<i class="fa fa-twitter"></i></p>
+        <p>
+          <v-icon> mdi-twitter</v-icon>
+        </p>
       </a>
     </div>
-    <div class="social google">
-      <a href=" https://www.plus.google.com " target="_blank">
-        <p>Google+<i class="fa fa-google-plus"></i></p>
+    <div class="social linkdin">
+      <a href=" https://www.linkedin..com " target="_blank">
+         <p>
+          <v-icon> mdi-linkedin</v-icon>
+        </p>
+      </a>
+    </div>
+     <div class="social youtube">
+      <a href=" https://www.youtube.com " target="_blank">
+       <p>
+          <v-icon> mdi-youtube</v-icon>
+        </p>
       </a>
     </div>
   </div>
@@ -31,7 +44,7 @@ a {
   text-decoration: none;
   vertical-align: middle;
   text-align: center;
-  line-height: 2;
+  line-height: 1;
 }
 
 p {
@@ -48,7 +61,7 @@ p {
 }
 
 p i {
-  left: 30px;
+  left: 35px;
   position: relative;
   vertical-align: middle;
   text-align: center;
@@ -56,19 +69,20 @@ p i {
 }
 
 .social {
-  margin-left: -200px;
-  width: 250px;
+  margin-left: -100px;
+  width: 150px;
   padding: 0;
   display: inline-table;
   height: 0px;
-  background-color: rgba(128, 128, 128, 0.73);
-  box-shadow: 0px 0px 6px 0px #3e3d3d;
+  background-color: rgba(177, 172, 172, 0.73);
+  box-shadow: 0px 0px 2px 0px #797777;
   cursor: pointer;
+  margin-top: 4px;
 }
 
 .social:hover {
   margin-left: -30px;
-  width: 150px;
+  width: 100px;
 }
 
 .facebook {
@@ -81,12 +95,16 @@ p i {
   border-radius: 20px;
 }
 
-.google {
+.linkdin {
+  background-color: #f0f2f5;
+  border-radius: 20px;
+}
+.youtube {
   background-color: #f0f2f5;
   border-radius: 20px;
 }
 
-.google:hover {
+.youtube:hover {
   background-color: #e52d27;
 }
 </style>
