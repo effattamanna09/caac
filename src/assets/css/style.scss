@@ -110,7 +110,7 @@ $yellow: #f2a900;
         border-radius: 40px;
     }
     .v-slide-group__next, .v-slide-group__prev {
-        margin: 70px;
+        margin: 15px;
     }
 }
 
@@ -165,7 +165,6 @@ $yellow: #f2a900;
         box-shadow: none;
     }
 }
-
 // Destop
 @media (min-width: 1025px) {
     .hidden {

@@ -209,10 +209,9 @@
             <v-col md="12" col="12">
               <v-slide-group show-arrows>
                 <v-slide-item v-for="n in 10" :key="n">
-                  <v-card class="mr-10">
+                  <v-card class="mr-10" elevation="0">
                     <a href="#">
                       <v-img
-                        class=""
                         :src="require('../assets/images/our-team1.png')"
                         height="250"
                         width="250"
@@ -239,7 +238,7 @@
           <v-col lg="12" cols="12" md="12">
             <div class="gallery mt-15">
               <v-row>
-                <v-col lg="8" cols="12" md="12">
+                <v-col lg="12" cols="12" md="12">
                   <h1>Gallery</h1>
                   <v-divider class="divider"></v-divider><br />
                   <p>
@@ -251,13 +250,6 @@
                     commonly used to demonstrate
                   </p></v-col
                 >
-                <v-col lg="4" cols="12" md="12">
-                  <a href="#">
-                    <v-img
-                      class="mt-4 ml-4"
-                      :src="require('../assets/images/latest-news/news3.png')"
-                      height="250" /></a
-                ></v-col>
               </v-row>
             </div>
           </v-col>
@@ -265,19 +257,16 @@
             <v-img
               class="mt-4 ml-4"
               :src="require('../assets/images/latest-news/news1.png')"
-              height="250"
           /></a>
           <a href="#">
             <v-img
               class="mt-4 ml-4"
               :src="require('../assets/images/latest-news/news2.png')"
-              height="250"
           /></a>
           <a href="#">
             <v-img
               class="mt-4 ml-4"
               :src="require('../assets/images/latest-news/news4.png')"
-              height="250"
           /></a>
           <v-row justify="center" class="ma-5">
             <v-btn outlined small> More About </v-btn>
@@ -288,6 +277,46 @@
       </div>
     </div>
     <!-- End Gallery -->
+
+    <!-- start events -->
+    <div class="container">
+      <v-row>
+        <v-col lg="12" cols="12" md="12">
+          <div class="events mt-15">
+            <h1>Events</h1>
+            <v-divider class="divider"></v-divider><br />
+            <p>
+              In publishing and graphic design, Lorem ipsum is a placeholder text commonly
+              used to demonstrate the visual form of a document or a typeface without
+              relying on meaningful content. Lorem ipsum may be used as a placeholder
+              before the final copy is available. In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to demonstrate
+            </p>
+          </div>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-hover>
+          <template v-slot:default="{ hover }">
+            <v-card class="mx-auto" max-width="344">
+              <v-img :src="require('../assets/images/events1.png')"></v-img>
+
+              <v-fade-transition>
+                <v-overlay v-if="hover" absolute color="#036358">
+                  <span>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
+                    aliquid culpa iure, quaerat repudiandae accusantium in quod esse hic
+                    provident.
+                  </span>
+                  <v-btn>See more info</v-btn>
+                </v-overlay>
+              </v-fade-transition>
+            </v-card>
+          </template>
+        </v-hover>
+      </v-row>
+    </div>
+    <!-- End events -->
 
     <!-- Start Partners -->
     <div class="container">
@@ -335,6 +364,7 @@ export default {
   },
 
   data: () => ({
+    overlay: false,
     items: [
       {
         src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
