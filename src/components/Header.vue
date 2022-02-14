@@ -18,7 +18,7 @@
               </v-list-item-title>
             </v-list-item>
 
-            <v-btn
+            <v-btn elevation="0" class="search-btn"
               ><v-icon> mdi-magnify</v-icon
               ><v-text-field class="search-btn-header" hide-details></v-text-field
             ></v-btn>

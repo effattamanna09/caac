@@ -23,23 +23,7 @@
     <v-divider class="red-divider"></v-divider>
 
     <!-- End Slider -->
-    <div class="sidebar">
-      <div class="social facebook">
-        <a href=" https://www.facebook.com " target="_blank">
-          <p>Like on Facebook <i class="fa fa-facebook"></i></p>
-        </a>
-      </div>
-      <div class="social twitter">
-        <a href=" https://www.twitter.com " target="_blank">
-          <p>Follow on Twitter<i class="fa fa-twitter"></i></p>
-        </a>
-      </div>
-      <div class="social google">
-        <a href=" https://www.plus.google.com " target="_blank">
-          <p>Google+<i class="fa fa-google-plus"></i></p>
-        </a>
-      </div>
-    </div>
+   <social />
 
     <!-- Start Latest news -->
     <div class="sci-bg sci-bg-2 mt-15">
@@ -82,14 +66,14 @@
     </div>
     <!-- End Latest news -->
 
-    <!-- Start Our projects -->
+    <!-- Start Our Workshops -->
 
     <div class="container">
-      <div class="sci-bg sci-bg-1">
+      <div class="Workshops">
         <v-row>
           <v-col lg="12" cols="12" md="12">
             <div class="project mt-15">
-              <h1>Our Project</h1>
+              <h1>Our Workshops</h1>
               <v-divider class="divider"></v-divider><br />
               <p>
                 In publishing and graphic design, Lorem ipsum is a placeholder text
@@ -140,7 +124,7 @@
       </div>
     </div>
 
-    <!-- End Our projects -->
+    <!-- End Our Workshops -->
 
     <!-- Start our team -->
     <div class="container">
@@ -221,13 +205,11 @@
             <v-img
               class="mt-4 ml-4"
               :src="require('../assets/images/latest-news/news2.png')"
-              
           /></a>
           <a href="#">
             <v-img
               class="mt-4 ml-4"
               :src="require('../assets/images/latest-news/news4.png')"
-              
           /></a>
           <v-row justify="center" class="ma-5">
             <v-btn outlined small> More About </v-btn>
@@ -259,9 +241,12 @@
       <v-row>
         <v-hover>
           <template v-slot:default="{ hover }">
-            <v-card class="mx-auto" max-width="344">
-              <v-img :src="require('../assets/images/events1.png')"></v-img>
-
+            <v-card class="mx-auto" max-width="500">
+              <v-img
+                :src="require('../assets/images/events1.png')"
+                width="400"
+                height="400"
+              ></v-img>
               <v-fade-transition>
                 <v-overlay v-if="hover" absolute color="#036358">
                   <span>
@@ -269,7 +254,7 @@
                     aliquid culpa iure, quaerat repudiandae accusantium in quod esse hic
                     provident.
                   </span>
-                   <v-btn class="mt-2 moreabout" outlined small> More Info </v-btn>
+                  <v-btn class="mt-2 moreabout" outlined small> More Info </v-btn>
                 </v-overlay>
               </v-fade-transition>
             </v-card>
@@ -318,10 +303,12 @@
 
 <script>
 import BaseLayout from "../App.vue";
+import Social from './social.vue';
 export default {
   name: "Home",
   components: {
     BaseLayout,
+    Social,
   },
 
   data: () => ({
@@ -343,80 +330,3 @@ export default {
   }),
 };
 </script>
-<style scoped>
-a {
-  text-decoration: none;
-  vertical-align: middle;
-  text-align: center;
-  line-height: 3;
-}
-
-p {
-  margin: 0px;
-}
-
-.sidebar {
-  height: auto;
-  width: 0px;
-  position: fixed;
-  text-align: center;
-  top: 35vh;
-  padding: 10px;
-}
-
-p i {
-  left: 30px;
-  position: relative;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 24px;
-}
-
-.social {
-  margin-left: -200px;
-  width: 230px;
-  padding: 0;
-  display: inline-table;
-  height: 0px;
-  background-color: rgba(128, 128, 128, 0.73);
-  box-shadow: 0px 0px 6px 0px #3e3d3d;
-  cursor: pointer;
-}
-
-.social:hover {
-  margin-left: -30px;
-  width: 230px;
-}
-
-.facebook {
-  background-color: #3b5998;
-}
-
-.twitter {
-  background-color: #4099ff;
-}
-
-.google {
-  background-color: #dd4b39;
-}
-
-.linkedin p i {
-  left: 20px;
-}
-
-.google p i {
-  left: 35px;
-}
-
-.youtube p i {
-  left: 18px;
-}
-
-.youtube:hover {
-  background-color: #e52d27;
-}
-
-.linkedin:hover {
-  background-color: #0976b4;
-}
-</style>
