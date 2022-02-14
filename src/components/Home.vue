@@ -40,47 +40,6 @@
         </a>
       </div>
     </div>
-    <!-- start about us -->
-
-    <div class="sci-bg">
-      <div class="container">
-        <div class="about mt-15">
-          <v-row>
-            <v-col lg="6" cols="12" md="12">
-              <v-row>
-                <v-col lg="3" cols="12" md="12">
-                  <a href="#">
-                    <img
-                      :src="require('../assets/images/about/about1.png')"
-                      height="200"
-                      width="400" /></a></v-col
-              ></v-row>
-            </v-col>
-            <v-col lg="6" cols="12" md="12">
-              <h1>About Us</h1>
-              <v-divider class="divider"></v-divider>
-              <br />
-              <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder text
-                commonly used to demonstrate the visual form of a document or a typeface
-                without relying on meaningful content. Lorem ipsum may be used as a
-                placeholder before the final copy is available. In publishing and graphic
-                design, Lorem ipsum is a placeholder text commonly used to demonstrate
-              </p>
-              <v-btn class="mt-6 moreabout" outlined small> More About </v-btn>
-              <v-col class="aboutBtn" cols="12">
-                <v-btn class="mr-5 pa-4" x-large outlined color="#009CA6">
-                  Our Mission
-                </v-btn>
-                <v-btn class="pa-4" x-large outlined color="#009CA6"> Our Vision </v-btn>
-              </v-col>
-            </v-col>
-          </v-row>
-        </div>
-      </div>
-    </div>
-
-    <!-- End about us -->
 
     <!-- Start Latest news -->
     <div class="sci-bg sci-bg-2 mt-15">
@@ -262,11 +221,13 @@
             <v-img
               class="mt-4 ml-4"
               :src="require('../assets/images/latest-news/news2.png')"
+              
           /></a>
           <a href="#">
             <v-img
               class="mt-4 ml-4"
               :src="require('../assets/images/latest-news/news4.png')"
+              
           /></a>
           <v-row justify="center" class="ma-5">
             <v-btn outlined small> More About </v-btn>
@@ -308,7 +269,7 @@
                     aliquid culpa iure, quaerat repudiandae accusantium in quod esse hic
                     provident.
                   </span>
-                  <v-btn>See more info</v-btn>
+                   <v-btn class="mt-2 moreabout" outlined small> More Info </v-btn>
                 </v-overlay>
               </v-fade-transition>
             </v-card>
@@ -418,18 +379,6 @@ p i {
   display: inline-table;
   height: 0px;
   background-color: rgba(128, 128, 128, 0.73);
-  -moz-transition-property: margin-left;
-  -moz-transition-duration: 0.2s;
-  -moz-transition-delay: 0.2s;
-  -ms-transition-property: margin-left;
-  -ms-transition-duration: 0.2s;
-  -ms-transition-delay: 0.2s;
-  -o-transition-property: margin-left;
-  -o-transition-duration: 0.2s;
-  -o-transition-delay: 0.2s;
-  -webkit-transition-property: margin-left;
-  -webkit-transition-duration: 0.2s;
-  -webkit-transition-delay: 0.2s;
   box-shadow: 0px 0px 6px 0px #3e3d3d;
   cursor: pointer;
 }

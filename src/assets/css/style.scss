@@ -71,22 +71,6 @@ $yellow: #f2a900;
     width: 60%;
 }
 
-// About CSS
-.aboutBtn {
-    margin-top: 120px;
-}
-.about {
-    margin-top: 100px;
-    margin-block-end: 70px;
-}
-.moreabout {
-    color: #d1ccbd;
-    float: right;
-}
-.moreabout:hover {
-    color: $red;
-}
-
 // Our projects Css
 .project {
     .v-sheet.v-card {
@@ -117,6 +101,14 @@ $yellow: #f2a900;
 .card-details {
     background-color: $red;
     color: white;
+}
+//events
+.moreabout {
+    color: #d1ccbd;
+    float: right;
+}
+.moreabout:hover {
+    color: $red;
 }
 //footer
 
