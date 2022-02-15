@@ -60,12 +60,9 @@ p {
   padding: 10px;
 }
 
-p i {
+p {
   left: 35px;
   position: relative;
-  vertical-align: middle;
-  text-align: center;
-  font-size: 10px;
 }
 
 .social {
