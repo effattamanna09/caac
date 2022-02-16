@@ -49,6 +49,8 @@ a {
 
 p {
   margin: 0px;
+  left: 35px;
+  position: relative;
 }
 
 .sidebar {
@@ -58,11 +60,6 @@ p {
   text-align: center;
   top: 35vh;
   padding: 10px;
-}
-
-p {
-  left: 35px;
-  position: relative;
 }
 
 .social {
@@ -82,26 +79,12 @@ p {
   width: 100px;
 }
 
-.facebook {
-  background-color: #f0f2f5;
-  border-radius: 20px;
-}
-
-.twitter {
-  background-color: #f0f2f5;
-  border-radius: 20px;
-}
-
-.linkdin {
-  background-color: #f0f2f5;
-  border-radius: 20px;
-}
-.youtube {
+.facebook , .twitter , .linkdin , .youtube {
   background-color: #f0f2f5;
   border-radius: 20px;
 }
 
 .youtube:hover {
-  background-color: #e52d27;
+background-color: red;
 }
 </style>

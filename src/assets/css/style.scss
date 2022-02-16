@@ -2,6 +2,7 @@ $bg-color: white;
 $red: #da291c;
 $Ecru-white: #b4b1a8;
 $yellow: #f2a900;
+$bondi-blue: #009CA6;
 
 * {
     padding: 0;
@@ -75,13 +76,13 @@ $yellow: #f2a900;
 }
 
 // Our projects Css
-.project {
-    .v-sheet.v-card {
-        border-radius: 3px;
-        border-block-end: $red solid 50px;
-    }
+// .project {
+//     .v-sheet.v-card {
+//         border-radius: 3px;
+//         border-block-end: $red solid 50px;
+//     }
 
-}
+// }
 
 
 //our team css
@@ -120,7 +121,12 @@ $yellow: #f2a900;
     margin-top: 100px;
     margin-block-end: 70px;
 }
-
+.btn-custom-bondi-blue{
+    background: $bondi-blue !important;
+}
+.btn-custom-bondi-blue:hover{
+        background: $red !important;   
+}
 
 //footer
 

@@ -5,12 +5,14 @@ import vuetify from './plugins/vuetify'
 const NotFound = { template: '<p>Page not found</p>' }
 import Home from './components/Home.vue'
 import about from './components/about.vue'
+import contact from './components/contact.vue'
 
 Vue.config.productionTip = false;
 
 const routes = {
   '/': Home,
   '/about-us': about,
+  '/contact': contact,
 }
 new Vue({
   vuetify,

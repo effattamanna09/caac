@@ -30,16 +30,12 @@
               before the final copy is available. In publishing and graphic design, Lorem
               ipsum is a placeholder text commonly used to demonstrate
             </p>
+            <!-- :style="{ 'background-color': hover ? '#da291c' : '#009CA6' }" -->
             <v-col class="aboutBtn" cols="12">
-              <v-hover v-slot="{ hover }">
-                <v-btn
-                  class="mr-5 pa-4 white--text about-btn"
-                  x-large
-                  :style="{ 'background-color': hover ? 'red' : '#009CA6' }"
-                  >Our Mission</v-btn
-                >
-              </v-hover>
-              <v-btn class="pa-4 white--text about-btn" x-large color="#009CA6">
+              <v-btn class="mr-5 pa-4 white--text btn-custom-bondi-blue" x-large
+                >Our Mission</v-btn
+              >
+              <v-btn class="pa-4 white--text btn-custom-bondi-blue" x-large>
                 Our Vision
               </v-btn>
             </v-col>
@@ -63,7 +59,7 @@
 import BaseLayout from "../App.vue";
 import Social from "./social.vue";
 export default {
-  name: "Home",
+  name: "about",
   components: {
     BaseLayout,
     Social,
