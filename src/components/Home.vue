@@ -26,56 +26,56 @@
     <social />
 
     <!-- Start Latest news -->
+
+    <div class="container">
+      <v-row>
+        <v-col lg="12" cols="12" md="12">
+          <div class="news">
+            <h1>Latest News</h1>
+            <v-divider class="divider"></v-divider><br />
+            <p>
+              In publishing and graphic design, Lorem ipsum is a placeholder text commonly
+              used to demonstrate the visual form of a document or a typeface without
+              relying on meaningful content. Lorem ipsum may be used as a placeholder
+              before the final copy is available. In publishing and graphic design, Lorem
+              ipsum is a placeholder text commonly used to demonstrate
+            </p>
+          </div>
+        </v-col></v-row
+      >
+    </div>
     <div class="sci-bg sci-bg-2 mt-15">
       <div class="container">
-        <v-row>
-          <v-col lg="12" cols="12" md="12">
-            <div class="news">
-              <h1>Latest News</h1>
-              <v-divider class="divider"></v-divider><br />
-              <p>
-                In publishing and graphic design, Lorem ipsum is a placeholder text
-                commonly used to demonstrate the visual form of a document or a typeface
-                without relying on meaningful content. Lorem ipsum may be used as a
-                placeholder before the final copy is available. In publishing and graphic
-                design, Lorem ipsum is a placeholder text commonly used to demonstrate
-              </p>
+        <v-card :loading="loading" class="mx-auto my-12" max-width="374">
+          <template slot="progress">
+            <v-progress-linear
+              color="deep-purple"
+              height="10"
+              indeterminate
+            ></v-progress-linear>
+          </template>
+          <v-img height="250" :src="require('../assets/images/news1.png')"></v-img>
+          <v-card-title>Cafe Badilico</v-card-title>
+          <v-card-text>
+            <div>
+              Small plates, salads & sandwfiches - an intimate setting with 12 indoor
+              seats plus patio seating.
             </div>
-          </v-col>
-          <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-            <template slot="progress">
-              <v-progress-linear
-                color="deep-purple"
-                height="10"
-                indeterminate
-              ></v-progress-linear>
-            </template>
-            <v-img height="250" :src="require('../assets/images/news1.png')"></v-img>
-            <v-card-title>Cafe Badilico</v-card-title>
-            <v-card-text>
-              <div>
-                Small plates, salads & sandwfiches - an intimate setting with 12 indoor
-                seats plus patio seating.
-              </div>
-            </v-card-text>
-
-            <v-divider class="mx-4"></v-divider>
-
-            <v-card-title>Tonight's availability</v-card-title>
-
-            <v-card-text>
-              <v-chip-group
-                v-model="selection"
-                active-class="deep-purple accent-4 white--text"
-                column
-              >
-                <v-btn>submit</v-btn>
-              </v-chip-group>
-            </v-card-text>
-          </v-card>
-        </v-row>
+          </v-card-text>
+          <v-divider class="mx-4"></v-divider>
+          <v-card-title>Tonight's availability</v-card-title>
+          <v-card-text>
+            <v-chip-group
+              v-model="selection"
+              active-class="deep-purple accent-4 white--text"
+              column>
+              <v-btn>submit</v-btn>
+            </v-chip-group>
+          </v-card-text>
+        </v-card>
       </div>
     </div>
+
     <!-- End Latest news -->
 
     <!-- Start Our Workshops -->
@@ -93,16 +93,10 @@
         </p>
       </div>
     </div>
-
     <div class="sci-bg sci-bg-2 mt-15">
       <div class="container">
         <v-row v-for="(workshop, index) in 3" :key="index">
-          <v-card
-            v-if="index % 2 === 0"
-            class="mx-auto mt-10"
-            max-width="100%"
-            outlined
-          >
+          <v-card v-if="index % 2 === 0" class="mx-auto mt-10" max-width="100%" outlined>
             <v-row>
               <v-col lg="4" cols="12" md="6">
                 <a href="#">
@@ -287,13 +281,13 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-hover>
+        <v-hover v-for="n in 6" :key="n">
           <template v-slot:default="{ hover }">
-            <v-card class="mx-auto" max-width="500">
+            <v-card class="mx-auto ma-6" max-width="500">
               <v-img
                 :src="require('../assets/images/events1.png')"
-                width="400"
-                height="400"
+                width="800"
+                height="600"
               ></v-img>
               <v-fade-transition>
                 <v-overlay v-if="hover" absolute color="#036358">
