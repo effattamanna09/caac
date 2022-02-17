@@ -1,14 +1,12 @@
 <template>
   <div>
     <!-- start top bar -->
+    <v-app-bar color="#DA291C" height="20px" elevation="0"> </v-app-bar>
 
-    
     <!-- End top bar -->
     <!-- start navigation -->
 
-    <v-app-bar color="white" elevation="1" fixed>
-       <v-app-bar color="#DA291C" height="20px" elevation="0" app>
-    </v-app-bar>
+    <v-app-bar color="white" elevation="1">
       <v-toolbar-items class="hidden-xs-only"
         ><div class="desktop-header">
           <v-list class="d-flex align-center header" color="white">

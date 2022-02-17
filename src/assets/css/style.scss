@@ -2,7 +2,8 @@ $bg-color: white;
 $red: #da291c;
 $Ecru-white: #b4b1a8;
 $yellow: #f2a900;
-$bondi-blue: #009CA6;
+$bondi-blue: #009ca6;
+$black: black;
 
 * {
     padding: 0;
@@ -13,12 +14,12 @@ $bondi-blue: #009CA6;
 .desktop-header {
     margin-left: 400px;
 }
-.container {
-    font-family: "tradegothicltcom-bdcn20";
-}
-.header {
-    font-family: "Trade Gothic LT";
-}
+// .container {
+//     font-family: "tradegothicltcom-bdcn20";
+// }
+// .header {
+//     font-family: "Trade Gothic LT";
+// }
 
 //remove text area border
 .v-text-field > .v-input__control > .v-input__slot:before {
@@ -27,7 +28,7 @@ $bondi-blue: #009CA6;
 .header {
     margin-right: 150px;
 }
-.search-btn{
+.search-btn {
     border: 3px solid black;
     border-radius: 15px;
 }
@@ -74,19 +75,52 @@ $bondi-blue: #009CA6;
     background-color: $red;
     width: 60%;
 }
+//Recent post-Layout 
+.recent-post-blue-card{
+    background-color: $bondi-blue;
+    color: white;
+}
+.recent-post-red-card{
+    background-color: $red;
+    color: white;
+}
+//workshop-layout
+.btn-workshop {
+    border: 2px solid $bondi-blue;
+    border-radius: 10px;
+    background-color: white;
+    float: right;
+    .v-btn__content {
+        color: $bondi-blue;
+    }
+}
+.btn-workshop:hover {
+    background-color: $bondi-blue;
+    color: white;
+    .v-btn__content {
+        color: rgb(235, 227, 227);
+    }
+}
 
-// Our projects Css
-// .project {
-//     .v-sheet.v-card {
-//         border-radius: 3px;
-//         border-block-end: $red solid 50px;
-//     }
-
-// }
-
-
+.btn-workshop-red{
+    font-variant: normal;
+    border: 3px solid $black;
+    border-radius: 10px;
+    width: 200px;
+    .v-btn__content {
+        color: $black;
+    }
+}
+.btn-workshop-red:hover {
+    background-color: $red;
+    border: none;
+    color: white;
+    .v-btn__content {
+        color: rgb(235, 227, 227);
+    }
+}
 //our team css
-.red_bg{
+.red_bg {
     .theme--light.v-icon.v-icon.v-icon--disabled {
         color: white !important;
     }
@@ -97,7 +131,8 @@ $bondi-blue: #009CA6;
         border: 1px solid white;
         border-radius: 40px;
     }
-    .v-slide-group__next, .v-slide-group__prev {
+    .v-slide-group__next,
+    .v-slide-group__prev {
         margin: 15px;
     }
 }
@@ -107,25 +142,20 @@ $bondi-blue: #009CA6;
     color: white;
 }
 //events
-.moreabout {
-    color: #d1ccbd;
+.event-btn {
     float: right;
 }
-.moreabout:hover {
-    color: $red;
-}
-
 
 // About us page
 .about {
     margin-top: 100px;
     margin-block-end: 70px;
 }
-.btn-custom-bondi-blue{
+.btn-custom-bondi-blue {
     background: $bondi-blue !important;
 }
-.btn-custom-bondi-blue:hover{
-        background: $red !important;   
+.btn-custom-bondi-blue:hover {
+    background: $red !important;
 }
 
 //footer

@@ -25,13 +25,13 @@
     <!-- End Slider -->
     <social />
 
-    <!-- Start Latest news -->
+    <!-- Start Recent Post -->
 
     <div class="container">
       <v-row>
         <v-col lg="12" cols="12" md="12">
-          <div class="news">
-            <h1>Latest News</h1>
+          <div class="recent-post">
+            <h1>Recent Post</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
               In publishing and graphic design, Lorem ipsum is a placeholder text commonly
@@ -44,39 +44,48 @@
         </v-col></v-row
       >
     </div>
+    <!-- card -->
     <div class="sci-bg sci-bg-2 mt-15">
       <div class="container">
-        <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-          <template slot="progress">
-            <v-progress-linear
-              color="deep-purple"
-              height="10"
-              indeterminate
-            ></v-progress-linear>
-          </template>
-          <v-img height="250" :src="require('../assets/images/news1.png')"></v-img>
-          <v-card-title>Cafe Badilico</v-card-title>
-          <v-card-text>
-            <div>
-              Small plates, salads & sandwfiches - an intimate setting with 12 indoor
-              seats plus patio seating.
-            </div>
-          </v-card-text>
-          <v-divider class="mx-4"></v-divider>
-          <v-card-title>Tonight's availability</v-card-title>
-          <v-card-text>
-            <v-chip-group
-              v-model="selection"
-              active-class="deep-purple accent-4 white--text"
-              column>
-              <v-btn>submit</v-btn>
-            </v-chip-group>
-          </v-card-text>
-        </v-card>
+        <v-row>
+          <v-col v-for="(post, index) in 6" :key="index" cols="12" lg="4">
+            <v-card v-if="index % 2 === 0" class="my-12" max-width="500">
+              <v-img height="250" :src="require('../assets/images/news1.png')"></v-img>
+              <div class="recent-post-blue-card">
+                <v-card-title>Cafe Badilico</v-card-title>
+                <v-card-text>
+                  <div>
+                    Small plates, salads & sandwfiches - an intimate setting with 12
+                    indoor seats plus patio seating.
+                  </div>
+                </v-card-text>
+                <v-card-text>
+                  <v-btn>submit</v-btn>
+                </v-card-text>
+              </div>
+            </v-card>
+
+            <v-card v-else class="my-12" max-width="500">
+              <v-img height="250" :src="require('../assets/images/news1.png')"></v-img>
+              <div class="recent-post-red-card">
+                <v-card-title>Cafe Badilico</v-card-title>
+                <v-card-text>
+                  <div>
+                    Small plates, salads & sandwfiches - an intimate setting with 12
+                    indoor seats plus patio seating.
+                  </div>
+                </v-card-text>
+                <v-card-text>
+                  <v-btn>submit</v-btn>
+                </v-card-text>
+              </div>
+            </v-card>
+          </v-col>
+        </v-row>
       </div>
     </div>
 
-    <!-- End Latest news -->
+    <!-- End Recent Post -->
 
     <!-- Start Our Workshops -->
 
@@ -123,7 +132,7 @@
                     commonly used to ipsum In publishing and graphic design, Lorem ipsum
                     is a placeholder text commonly used to ipsum
                   </p>
-                  <v-btn class="mt-6 ma-2 moreabout" outlined small> Read More </v-btn>
+                  <v-btn class="ma-10 btn-workshop" outlined large> Read More </v-btn>
                 </v-card-text>
               </v-col>
             </v-row>
@@ -148,7 +157,7 @@
                     commonly used to ipsum In publishing and graphic design, Lorem ipsum
                     is a placeholder text commonly used to ipsum
                   </p>
-                  <v-btn class="mt-6 ma-2 moreabout" outlined small> Read More </v-btn>
+                  <v-btn class="ma-10 btn-workshop" outlined large> Read More </v-btn>
                 </v-card-text>
               </v-col>
               <v-col lg="4" cols="12" md="6">
@@ -162,7 +171,7 @@
           </v-card>
         </v-row>
         <v-row justify="center" class="ma-5 mt-10">
-          <v-btn outlined large> All News </v-btn>
+          <v-btn class="btn-workshop-red" outlined x-large> All News </v-btn>
         </v-row>
       </div>
     </div>
@@ -255,12 +264,14 @@
               :src="require('../assets/images/latest-news/news4.png')"
           /></a>
         </v-row>
+        <v-row justify="center" class="ma-5">
+          <v-btn outlined small>See More </v-btn>
+        </v-row>
       </div>
     </div>
+
     <v-divider class="red-divider"></v-divider>
-    <v-row justify="center" class="ma-5">
-      <v-btn outlined small>See More </v-btn>
-    </v-row>
+
     <!-- End Gallery -->
 
     <!-- start events -->
@@ -283,7 +294,7 @@
       <v-row>
         <v-hover v-for="n in 6" :key="n">
           <template v-slot:default="{ hover }">
-            <v-card class="mx-auto ma-6" max-width="500">
+            <v-card class="mx-auto ma-6" max-width="800">
               <v-img
                 :src="require('../assets/images/events1.png')"
                 width="800"
@@ -296,7 +307,9 @@
                     aliquid culpa iure, quaerat repudiandae accusantium in quod esse hic
                     provident.
                   </span>
-                  <v-btn class="mt-2 moreabout" outlined small> More Info </v-btn>
+                  <v-btn class="ma-5 event-btn" color="#da291c" outlined large
+                    >Read More</v-btn
+                  >
                 </v-overlay>
               </v-fade-transition>
             </v-card>
