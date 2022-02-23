@@ -50,7 +50,7 @@
         <v-row>
           <v-col v-for="(post, index) in 6" :key="index" cols="12" lg="4">
             <v-card v-if="index % 2 === 0" class="my-12" max-width="500">
-              <v-img height="250" :src="require('../assets/images/news1.png')"></v-img>
+              <v-img height="350" :src="require('../assets/images/news1.png')"></v-img>
               <div class="recent-post-blue-card">
                 <v-card-title>Cafe Badilico</v-card-title>
                 <v-card-text>
@@ -66,7 +66,7 @@
             </v-card>
 
             <v-card v-else class="my-12" max-width="500">
-              <v-img height="250" :src="require('../assets/images/news1.png')"></v-img>
+              <v-img height="350" :src="require('../assets/images/news1.png')"></v-img>
               <div class="recent-post-red-card">
                 <v-card-title>Cafe Badilico</v-card-title>
                 <v-card-text>
