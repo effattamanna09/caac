@@ -5,21 +5,28 @@
 
     <!-- End top bar -->
     <!-- start navigation -->
+    <!-- Desktop -->
 
-    <v-app-bar color="white" elevation="1">
-      <v-toolbar-items class="hidden-xs-only"
-        ><div class="desktop-header">
-          <v-list class="d-flex align-center header" color="white">
+    <v-app-bar color="#FFFFFF" elevation="1">
+      <v-toolbar-items class="hidden-xs-only">
+        <a href="#">
+          <v-img
+            class="mr-3"
+            :src="require('../assets/images/savelogo.png')"
+            height="50px"
+            width="200px"
+        /></a>
+        <div class="desktop-header">
+          <v-list class="d-flex align-center header" color="#FFFFFF">
             <v-list-item v-for="link in links" :key="link.text">
               <v-list-item-title class="font-class-name"
                 >{{ link.text }}
               </v-list-item-title>
             </v-list-item>
-
-            <v-btn elevation="0" class="search-btn"
+            <!-- <v-btn elevation="0" class="search-btn"
               ><v-icon> mdi-magnify</v-icon
               ><v-text-field class="search-btn-header" hide-details></v-text-field
-            ></v-btn>
+            ></v-btn> -->
           </v-list>
         </div>
         <v-app-bar-nav-icon
@@ -28,24 +35,29 @@
           class="hidden"
         ></v-app-bar-nav-icon
       ></v-toolbar-items>
-
+      <!-- mobile start -->
       <div class="hidden-sm-and-up">
-        <v-menu offset-y>
+        <v-menu offset-y content-class="mobile-menu">
           <template v-slot:activator="{ on }">
             <v-app-bar-nav-icon v-on="on"></v-app-bar-nav-icon>
           </template>
 
-          <v-list class="header" color="#D1CCBD">
+          <v-list class="header" color="#FFFFFF">
             <v-list-item v-for="link in links" :key="link.text">
-              <v-list-item-title class="font-class-name"
-                >{{ link.text }}
-              </v-list-item-title>
+              <v-list-item-title>{{ link.text }} </v-list-item-title>
             </v-list-item>
 
-            <v-btn
+            <!-- <v-btn
               ><v-icon> mdi-magnify</v-icon
               ><v-text-field class="search-btn-header" hide-details></v-text-field
-            ></v-btn>
+            ></v-btn> -->
+            <a href="#">
+              <v-img
+                class="ma-3"
+                :src="require('../assets/images/savelogo.png')"
+                height="50px"
+                width="200px"
+            /></a>
           </v-list>
         </v-menu>
       </div>
@@ -60,17 +72,14 @@ export default {
 
   data: () => ({
     drawer: null,
-
     links: [
       { text: "Home", route: "/" },
-      {
-        text: "About Us",
-        route: "/",
-      },
+      { text: "About Us", route: "/" },
       { text: "Project", route: "/" },
-      { text: "Community", route: "/" },
-      { text: "Resources", route: "/" },
+      { text: "Event", route: "/" },
       { text: "Gallery", route: "/" },
+      { text: "Document", route: "/" },
+      { text: "Board", route: "/" },
       { text: "Contact", route: "/" },
     ],
   }),

@@ -14,6 +14,13 @@ $black: black;
 .desktop-header {
     margin-left: 400px;
 }
+.mobile-menu{
+    box-shadow: none !important;
+    // .theme--light.v-list {
+    //     background: transparent !important;
+    //     color: rgba(0, 0, 0, 0.87);
+    // }
+}
 // .container {
 //     font-family: "tradegothicltcom-bdcn20";
 // }
@@ -102,7 +109,7 @@ $black: black;
 }
 .btn-recent-post-allnews{
     margin: auto;
-    width: 15%;
+    width: 200px;
     border: 3px solid rgb(10, 10, 10);
     border-radius: 10px;
     float: right;
