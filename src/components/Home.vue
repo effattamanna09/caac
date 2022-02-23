@@ -52,32 +52,58 @@
             <v-card v-if="index % 2 === 0" class="my-12" max-width="500">
               <v-img height="350" :src="require('../assets/images/news1.png')"></v-img>
               <div class="recent-post-blue-card">
-                <v-card-title>Cafe Badilico</v-card-title>
+                <v-card-title
+                  >Evaluation of Results for Child Protection Predeployment Trainings for
+                  UDPF Troops</v-card-title
+                >
                 <v-card-text>
                   <div>
-                    Small plates, salads & sandwfiches - an intimate setting with 12
-                    indoor seats plus patio seating.
+                    Save the Children through the Regional Programming Unit concluded the
+                    2nd phase of implementing the “Integrating Child Protection within the
+                    African Peace and Security Architecture 2017-2019” on 31st December,
+                    2019.
                   </div>
                 </v-card-text>
-                <v-card-text>
-                  <v-btn>submit</v-btn>
-                </v-card-text>
+                <v-row>
+                  <v-col lg="5" md="5" cols="5">
+                   <v-icon>mdi-clock-time-nine-outline </v-icon>February7, 2022
+                  </v-col>
+                   <v-col lg="2" md="2" cols="2">
+                   <v-icon>mdi-chat</v-icon>0
+                  </v-col>
+                  <v-col lg="5" md="5" cols="5">
+                   <v-btn class="mr-2 btn-recent-post" outlined> Read More </v-btn>
+                  </v-col>
+                </v-row>
               </div>
             </v-card>
 
             <v-card v-else class="my-12" max-width="500">
               <v-img height="350" :src="require('../assets/images/news1.png')"></v-img>
               <div class="recent-post-red-card">
-                <v-card-title>Cafe Badilico</v-card-title>
+               <v-card-title
+                  >Evaluation of Results for Child Protection Predeployment Trainings for
+                  UDPF Troops</v-card-title
+                >
                 <v-card-text>
                   <div>
-                    Small plates, salads & sandwfiches - an intimate setting with 12
-                    indoor seats plus patio seating.
+                    Save the Children through the Regional Programming Unit concluded the
+                    2nd phase of implementing the “Integrating Child Protection within the
+                    African Peace and Security Architecture 2017-2019” on 31st December,
+                    2019.
                   </div>
                 </v-card-text>
-                <v-card-text>
-                  <v-btn>submit</v-btn>
-                </v-card-text>
+                <v-row>
+                  <v-col lg="5" md="5" cols="5">
+                   <v-icon>mdi-clock-time-nine-outline </v-icon>February7, 2022
+                  </v-col>
+                   <v-col lg="2" md="2" cols="2">
+                   <v-icon>mdi-chat</v-icon>0
+                  </v-col>
+                  <v-col lg="5" md="5" cols="5">
+                   <v-btn class="mr-2 btn-recent-post" outlined> Read More </v-btn>
+                  </v-col>
+                </v-row>
               </div>
             </v-card>
           </v-col>

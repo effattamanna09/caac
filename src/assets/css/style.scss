@@ -84,6 +84,23 @@ $black: black;
     background-color: $red;
     color: white;
 }
+.btn-recent-post{
+    border: 4px solid rgba(231, 226, 226, 0.521);
+    border-radius: 10px;
+    float: right;
+    .v-btn__content {
+        color: white;
+    }
+}
+.btn-recent-post:hover {
+    border: none !important;
+    background-color: white;
+    color: $red;
+    .v-btn__content {
+        color: $red;
+    }
+}
+
 //workshop-layout
 .btn-workshop {
     border: 2px solid $bondi-blue;
