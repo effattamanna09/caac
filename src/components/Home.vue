@@ -66,13 +66,11 @@
                 </v-card-text>
                 <v-row>
                   <v-col lg="5" md="5" cols="5">
-                   <v-icon>mdi-clock-time-nine-outline </v-icon>February7, 2022
+                    <v-icon>mdi-clock-time-nine-outline </v-icon>February7, 2022
                   </v-col>
-                   <v-col lg="2" md="2" cols="2">
-                   <v-icon>mdi-chat</v-icon>0
-                  </v-col>
+                  <v-col lg="2" md="2" cols="2"> <v-icon>mdi-chat</v-icon>0</v-col>
                   <v-col lg="5" md="5" cols="5">
-                   <v-btn class="mr-2 btn-recent-post" outlined> Read More </v-btn>
+                    <v-btn class="mr-2 btn-recent-post" outlined> Read More </v-btn>
                   </v-col>
                 </v-row>
               </div>
@@ -81,7 +79,7 @@
             <v-card v-else class="my-12" max-width="500">
               <v-img height="350" :src="require('../assets/images/news1.png')"></v-img>
               <div class="recent-post-red-card">
-               <v-card-title
+                <v-card-title
                   >Evaluation of Results for Child Protection Predeployment Trainings for
                   UDPF Troops</v-card-title
                 >
@@ -95,18 +93,17 @@
                 </v-card-text>
                 <v-row>
                   <v-col lg="5" md="5" cols="5">
-                   <v-icon>mdi-clock-time-nine-outline </v-icon>February7, 2022
+                    <v-icon>mdi-clock-time-nine-outline </v-icon>February7, 2022
                   </v-col>
-                   <v-col lg="2" md="2" cols="2">
-                   <v-icon>mdi-chat</v-icon>0
-                  </v-col>
+                  <v-col lg="2" md="2" cols="2"> <v-icon>mdi-chat</v-icon>0 </v-col>
                   <v-col lg="5" md="5" cols="5">
-                   <v-btn class="mr-2 btn-recent-post" outlined> Read More </v-btn>
+                    <v-btn class="mr-2 btn-recent-post" outlined> Read More </v-btn>
                   </v-col>
                 </v-row>
               </div>
             </v-card>
           </v-col>
+           <v-btn class="btn-recent-post-allnews" outlined x-large> All News </v-btn>
         </v-row>
       </div>
     </div>
@@ -318,7 +315,7 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-hover v-for="n in 6" :key="n">
+        <v-hover v-for="n in 2" :key="n">
           <template v-slot:default="{ hover }">
             <v-card class="mx-auto ma-6" max-width="800">
               <v-img

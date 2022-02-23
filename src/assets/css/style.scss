@@ -59,7 +59,7 @@ $black: black;
     background-image: url("assets/images/gallery-background.png");
 }
 .sci-bg-2 {
-    background-image: url("assets/images/gray_bg.png");
+    background-image: url("assets/images/recent-post-bg.png");
     background-repeat: repeat;
 }
 
@@ -95,6 +95,23 @@ $black: black;
 .btn-recent-post:hover {
     border: none !important;
     background-color: white;
+    color: $red;
+    .v-btn__content {
+        color: $red;
+    }
+}
+.btn-recent-post-allnews{
+    margin: auto;
+    width: 15%;
+    border: 3px solid rgb(10, 10, 10);
+    border-radius: 10px;
+    float: right;
+    .v-btn__content {
+        color: black;
+    } 
+}
+.btn-recent-post-allnews:hover {
+    border: 3px solid $red; 
     color: $red;
     .v-btn__content {
         color: $red;
