@@ -30,7 +30,7 @@
     <div class="container">
       <v-row>
         <v-col lg="12" cols="12" md="12">
-          <div class="recent-post">
+          <div class="recent-post mt-10">
             <h1>Recent Post</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
@@ -45,7 +45,7 @@
       >
     </div>
     <!-- card -->
-    <div class="sci-bg sci-bg-2 mt-15">
+    <div class="sci-bg sci-bg-2">
       <div class="container">
         <v-row>
           <v-col v-for="(post, index) in 6" :key="index" cols="12" lg="4">
@@ -103,7 +103,7 @@
               </div>
             </v-card>
           </v-col>
-           <v-btn class="btn-recent-post-allnews" outlined x-large> All News </v-btn>
+          <v-btn class="btn-recent-post-allnews" outlined x-large> All News </v-btn>
         </v-row>
       </div>
     </div>
@@ -117,15 +117,12 @@
         <h1>Our Workshops</h1>
         <v-divider class="divider"></v-divider><br />
         <p>
-          In publishing and graphic design, Lorem ipsum is a placeholder text commonly
-          used to demonstrate the visual form of a document or a typeface without relying
-          on meaningful content. Lorem ipsum may be used as a placeholder before the final
-          copy is available. In publishing and graphic design, Lorem ipsum is a
-          placeholder text commonly used to demonstrate
+          Increasing engagement with governments and regional bodies on effective
+          accountability mechanisms for children
         </p>
       </div>
     </div>
-    <div class="sci-bg sci-bg-2 mt-15">
+    <div class="sci-bg sci-bg-2 mt-6">
       <div class="container">
         <v-row v-for="(workshop, index) in 3" :key="index">
           <v-card v-if="index % 2 === 0" class="mx-auto mt-10" max-width="100%" outlined>
@@ -160,7 +157,7 @@
               </v-col>
             </v-row>
           </v-card>
-          <v-card v-else class="mx-auto mt-10" max-width="100%" outlined>
+          <v-card v-else class="mx-auto mt-6" max-width="100%" outlined>
             <v-row>
               <v-col lg="8" cols="12" md="6">
                 <v-card-text
@@ -193,7 +190,7 @@
             </v-row>
           </v-card>
         </v-row>
-        <v-row justify="center" class="ma-5 mt-10">
+        <v-row justify="center" class="ma-5 mt-6">
           <v-btn class="btn-workshop-red" outlined x-large> All News </v-btn>
         </v-row>
       </div>
@@ -205,7 +202,7 @@
     <div class="container">
       <v-row>
         <v-col lg="12" cols="12" md="12">
-          <div class="team mt-15">
+          <div class="team mt-6">
             <h1>Our Team</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
@@ -250,7 +247,7 @@
     <!-- End our team -->
 
     <!-- Start Gallery -->
-    <div class="sci-bg sci-bg-2 mt-15">
+    <div class="sci-bg sci-bg-2 mt-10">
       <div class="container">
         <v-row>
           <v-col lg="12" cols="12" md="12">
@@ -260,35 +257,35 @@
                   <h1>Gallery</h1>
                   <v-divider class="divider"></v-divider><br />
                   <p>
-                    In publishing and graphic design, Lorem ipsum is a placeholder text
-                    commonly used to demonstrate the visual form of a document or a
-                    typeface without relying on meaningful content. Lorem ipsum may be
-                    used as a placeholder before the final copy is available. In
-                    publishing and graphic design, Lorem ipsum is a placeholder text
-                    commonly used to demonstrate
+                    The sights and sounds for the Children Affected by Armed Conflict
+                    (CAAC) in Sub-Sahara Africa Programe
                   </p></v-col
                 >
               </v-row>
             </div>
           </v-col>
-          <a href="#">
-            <v-img
-              class="mt-4 ml-4"
-              :src="require('../assets/images/latest-news/news1.png')"
-          /></a>
-          <a href="#">
-            <v-img
-              class="mt-4 ml-4"
-              :src="require('../assets/images/latest-news/news2.png')"
-          /></a>
-          <a href="#">
-            <v-img
-              class="mt-4 ml-4"
-              :src="require('../assets/images/latest-news/news4.png')"
-          /></a>
-        </v-row>
-        <v-row justify="center" class="ma-5">
-          <v-btn outlined small>See More </v-btn>
+          <v-col lg="4" md="4" cols="4">
+            <a href="#">
+              <v-img
+                class="mt-4 ml-4 gallery-shadow"
+                :src="require('../assets/images/gallery/gallery2.png')"
+            /></a>
+          </v-col>
+          <v-col lg="4" md="4" cols="4">
+            <a href="#">
+              <v-img
+                class="mt-4 ml-4 gallery-shadow"
+                :src="require('../assets/images/gallery/gallery1.png')"
+            /></a>
+          </v-col>
+          <v-col lg="4" md="4" cols="4">
+            <a href="#">
+              <v-img
+                class="mt-4 ml-4 gallery-shadow"
+                :src="require('../assets/images/gallery/gallery2.png')"
+            /></a>
+          </v-col>
+          <v-btn class="btn-gallery" outlined x-large> See More </v-btn>
         </v-row>
       </div>
     </div>
@@ -301,7 +298,7 @@
     <div class="container">
       <v-row>
         <v-col lg="12" cols="12" md="12">
-          <div class="events mt-15">
+          <div class="events mt-6">
             <h1>Events</h1>
             <v-divider class="divider"></v-divider><br />
             <p>
@@ -317,11 +314,11 @@
       <v-row>
         <v-hover v-for="n in 2" :key="n">
           <template v-slot:default="{ hover }">
-            <v-card class="mx-auto ma-6" max-width="800">
+            <v-card class="mx-auto ma-6" max-width="400">
               <v-img
                 :src="require('../assets/images/events1.png')"
-                width="800"
-                height="600"
+                width="400"
+                height="400"
               ></v-img>
               <v-fade-transition>
                 <v-overlay v-if="hover" absolute color="#036358">
@@ -346,7 +343,7 @@
     <div class="container">
       <v-row>
         <v-col lg="12" cols="12" md="12">
-          <div class="partner mt-15">
+          <div class="partner mt-6">
             <h1>Partners</h1>
             <v-divider class="divider"></v-divider><br />
             <p>

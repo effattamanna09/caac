@@ -12,7 +12,10 @@ $black: black;
 // @import url(//db.onlinewebfonts.com/c/ca600d01171a97410ea97578addeb476?family=Gill+Sans+Infant+Std);
 
 .desktop-header {
-    margin-left: 400px;
+    margin-left: 15%;
+}
+.header-padding{
+    padding: 0;
 }
 .mobile-menu{
     box-shadow: none !important;
@@ -182,11 +185,32 @@ $black: black;
     background-color: $red;
     color: white;
 }
-//events
+//events-layout
 .event-btn {
     float: right;
 }
-
+//Gallery landing page
+.gallery-shadow{
+    box-shadow: 0 -10px 20px -5px rgb(32 31 31);  
+}
+.btn-gallery{
+    margin: auto;
+    font-variant: normal;
+    border: 3px solid $red;
+    border-radius: 10px;
+    width: 200px;
+    .v-btn__content {
+        color: $red;
+    }
+}
+.btn-gallery:hover {
+    background-color: $red;
+    border: none;
+    color: white;
+    .v-btn__content {
+        color: rgb(235, 227, 227);
+    }
+}
 // About us page
 .about {
     margin-top: 100px;

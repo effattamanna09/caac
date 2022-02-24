@@ -11,18 +11,21 @@
       <v-toolbar-items class="hidden-xs-only">
         <a href="#">
           <v-img
-            class="mr-3"
+            class="ml-10 mt-2"
             :src="require('../assets/images/savelogo.png')"
             height="50px"
             width="200px"
         /></a>
         <div class="desktop-header">
           <v-list class="d-flex align-center header" color="#FFFFFF">
-            <v-list-item v-for="link in links" :key="link.text">
-              <v-list-item-title class="font-class-name"
-                >{{ link.text }}
-              </v-list-item-title>
+            <v-list-item v-for="link in links" :key="link.text" class="header-padding">
+              <v-btn v-bind="attrs" v-on="on" text elevation="0">
+                <v-list-item-title
+                  >{{ link.text }}
+                </v-list-item-title>
+                </v-btn>
             </v-list-item>
+            <v-switch v-model="switch1" inset></v-switch>
             <!-- <v-btn elevation="0" class="search-btn"
               ><v-icon> mdi-magnify</v-icon
               ><v-text-field class="search-btn-header" hide-details></v-text-field
@@ -56,7 +59,7 @@
                 class="ma-3"
                 :src="require('../assets/images/savelogo.png')"
                 height="50px"
-                width="200px"
+                width="120px"
             /></a>
           </v-list>
         </v-menu>
@@ -72,6 +75,7 @@ export default {
 
   data: () => ({
     drawer: null,
+    switch1: true,
     links: [
       { text: "Home", route: "/" },
       { text: "About Us", route: "/" },
